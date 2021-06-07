@@ -85,15 +85,6 @@
                     <view key="view" contentMode="scaleToFill" id="Gp7-Ak-jGD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-Xo-Ftz">
-                                <rect key="frame" x="84" y="293" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1ki-1i-q03"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -101,40 +92,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tWv-YY-SJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3248" y="-625"/>
+            <point key="canvasLocation" x="3243" y="-629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MnU-P1-f8f">
             <objects>
-                <navigationController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="i8p-yQ-Nfk" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NLc-eM-kyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="i8p-yQ-Nfk" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="itR-uM-uzw"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="wIf-YY-On7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wIf-YY-On7">
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="DwT-DE-6hQ" kind="relationship" relationship="rootViewController" id="1dv-p0-VY9"/>
+                        <segue destination="pjP-ID-y3E" kind="relationship" relationship="rootViewController" id="9Ea-K0-Ptn"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NLc-eM-kyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2045" y="68"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="zdQ-xC-4RG">
-            <objects>
-                <viewController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="DwT-DE-6hQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="E04-2s-Kch">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="v7j-QL-kNa"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ao7-Gl-kIG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hhx-wq-Mea" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3295" y="74"/>
         </scene>
         <!--Tips-->
         <scene sceneID="0Vm-3s-xni">
@@ -168,6 +143,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6b-zk-Ore" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3299" y="849"/>
+        </scene>
+        <!--SavedPage-->
+        <scene sceneID="423-Hm-vv4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SavedPage" id="pjP-ID-y3E" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="xAW-wW-jCW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f0M-Fz-gT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3299" y="68"/>
         </scene>
     </scenes>
     <resources>

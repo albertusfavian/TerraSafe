@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
+		8E909AEA266E544E007D63E8 /* SavedPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E909AE9266E544E007D63E8 /* SavedPage.storyboard */; };
+		8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */; };
+		8E909AEE266E5CD1007D63E8 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E909AED266E5CD1007D63E8 /* SavedVC.swift */; };
 		8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87CF266D1195007E7375 /* AppDelegate.swift */; };
 		8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D1266D1195007E7375 /* SceneDelegate.swift */; };
 		8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D3266D1195007E7375 /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
+		8E909AE9266E544E007D63E8 /* SavedPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedPage.storyboard; sourceTree = "<group>"; };
+		8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
+		8E909AED266E5CD1007D63E8 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		8E9F87CC266D1195007E7375 /* TerraSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9F87CF266D1195007E7375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E9F87D1266D1195007E7375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,8 @@
 		8E9F87EC266D1265007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */,
+				8E909AED266E5CD1007D63E8 /* SavedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 		8E9F87ED266D1265007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E909AE9266E544E007D63E8 /* SavedPage.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E909AEA266E544E007D63E8 /* SavedPage.storyboard in Resources */,
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
@@ -275,6 +285,8 @@
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
+				8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */,
+				8E909AEE266E5CD1007D63E8 /* SavedVC.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
