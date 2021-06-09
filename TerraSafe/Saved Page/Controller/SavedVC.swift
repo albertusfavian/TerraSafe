@@ -7,27 +7,27 @@
 
 import UIKit
 
-class SavedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class SavedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableSaved: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//
         tableSaved.delegate = self
         tableSaved.dataSource = self
         tableSaved.separatorStyle = .none
         
-        // if tableview empty set ishidden true, bring this code to numberOfRowInSection if coredata are available
+//         if tableview empty set ishidden true, bring this code to numberOfRowInSection if coredata are available
         tableSaved.isHidden = false
         // Do any additional setup after loading the view.
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let savedCell = tableView.dequeueReusableCell(withIdentifier: "savedCell", for: indexPath) as! SavedTableViewCell
         savedCell.mountainName.text = "Gn. Papandayan"
@@ -39,17 +39,17 @@ class SavedVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         savedCell.layer.borderColor = tableView.backgroundColor?.cgColor
         return savedCell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 223
     }
-    
+
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
         headerView.backgroundColor = view.backgroundColor
         return headerView
     }
-    
+
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 16
     }
