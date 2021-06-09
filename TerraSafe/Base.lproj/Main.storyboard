@@ -71,37 +71,22 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="pvQ-Bp-tdx" kind="relationship" relationship="rootViewController" id="lwg-26-Srs"/>
+                        <segue destination="9lR-RN-5EX" kind="relationship" relationship="rootViewController" id="BGE-6Y-Fo9"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3b-Hf-NSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2045" y="-629"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dK5-Ph-B1y">
+        <!--DetailInformationPage-->
+        <scene sceneID="obl-a8-qnD">
             <objects>
-                <viewController id="pvQ-Bp-tdx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gp7-Ak-jGD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-Xo-Ftz">
-                                <rect key="frame" x="84" y="293" width="54" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="1ki-1i-q03"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="QVk-BQ-Xgk"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tWv-YY-SJK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="DetailInformationPage" id="9lR-RN-5EX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="H3r-mO-y0h"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54B-m4-uJk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3248" y="-625"/>
+            <point key="canvasLocation" x="3203" y="-674"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MnU-P1-f8f">
