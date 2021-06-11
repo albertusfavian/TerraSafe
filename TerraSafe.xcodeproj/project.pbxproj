@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		297C07B3266FDCFB00885885 /* g1t1.json in Resources */ = {isa = PBXBuildFile; fileRef = 297C07B2266FDCFB00885885 /* g1t1.json */; };
+		297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */; };
+		297C07B72670CB0400885885 /* DrawerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B62670CB0400885885 /* DrawerVC.swift */; };
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
 		8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87CF266D1195007E7375 /* AppDelegate.swift */; };
 		8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D1266D1195007E7375 /* SceneDelegate.swift */; };
@@ -15,9 +18,14 @@
 		8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */; };
 		8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DB266D1196007E7375 /* Assets.xcassets */; };
 		8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */; };
+		F0C06EF08DCB23385CBE6285 /* Pods_TerraSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC18592AEEA439E7DF73BEC0 /* Pods_TerraSafe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2088D806C9FE95FA443BEE87 /* Pods-TerraSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.debug.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.debug.xcconfig"; sourceTree = "<group>"; };
+		297C07B2266FDCFB00885885 /* g1t1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = g1t1.json; sourceTree = "<group>"; };
+		297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackEmergencyInfoVC.swift; path = TerraSafe/TrackEmergencyInfoVC.swift; sourceTree = SOURCE_ROOT; };
+		297C07B62670CB0400885885 /* DrawerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawerVC.swift; path = TerraSafe/DrawerVC.swift; sourceTree = SOURCE_ROOT; };
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
 		8E9F87CC266D1195007E7375 /* TerraSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9F87CF266D1195007E7375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +36,8 @@
 		8E9F87DB266D1196007E7375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F87DE266D1196007E7375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F87E0266D1196007E7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC18592AEEA439E7DF73BEC0 /* Pods_TerraSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TerraSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF69D8AB454E7E2C8DE38477 /* Pods-TerraSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.release.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C06EF08DCB23385CBE6285 /* Pods_TerraSafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EB57BF2C2C9D6E82B3C7673 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2088D806C9FE95FA443BEE87 /* Pods-TerraSafe.debug.xcconfig */,
+				EF69D8AB454E7E2C8DE38477 /* Pods-TerraSafe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E9F87C3266D1195007E7375 = {
 			isa = PBXGroup;
 			children = (
 				8E9F87CE266D1195007E7375 /* TerraSafe */,
 				8E9F87CD266D1195007E7375 /* Products */,
+				6EB57BF2C2C9D6E82B3C7673 /* Pods */,
+				D9BF42DBB2D9F62B9E35703B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +94,7 @@
 				8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */,
 				8E9F87E0266D1196007E7375 /* Info.plist */,
 				8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */,
+				297C07B2266FDCFB00885885 /* g1t1.json */,
 			);
 			path = TerraSafe;
 			sourceTree = "<group>";
@@ -182,6 +205,8 @@
 		8E9F87F3266D12BC007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */,
+				297C07B62670CB0400885885 /* DrawerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +226,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D9BF42DBB2D9F62B9E35703B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC18592AEEA439E7DF73BEC0 /* Pods_TerraSafe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E9F87E3266D1196007E7375 /* Build configuration list for PBXNativeTarget "TerraSafe" */;
 			buildPhases = (
+				0CF2F973046A3F4ADA5A61C4 /* [CP] Check Pods Manifest.lock */,
 				8E9F87C8266D1195007E7375 /* Sources */,
 				8E9F87C9266D1195007E7375 /* Frameworks */,
 				8E9F87CA266D1195007E7375 /* Resources */,
+				AB82EBD2CFC2300E17F44707 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				297C07B3266FDCFB00885885 /* g1t1.json in Resources */,
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
@@ -267,15 +303,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0CF2F973046A3F4ADA5A61C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TerraSafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB82EBD2CFC2300E17F44707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraSafe/Pods-TerraSafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraSafe/Pods-TerraSafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TerraSafe/Pods-TerraSafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E9F87C8266D1195007E7375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
+				297C07B72670CB0400885885 /* DrawerVC.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
+				297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +499,7 @@
 		};
 		8E9F87E4266D1196007E7375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2088D806C9FE95FA443BEE87 /* Pods-TerraSafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -432,12 +513,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = albertPersonalProject.TerraSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8E9F87E5266D1196007E7375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF69D8AB454E7E2C8DE38477 /* Pods-TerraSafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,7 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = albertPersonalProject.TerraSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
