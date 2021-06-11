@@ -15,6 +15,9 @@
 		8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */; };
 		8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DB266D1196007E7375 /* Assets.xcassets */; };
 		8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */; };
+		8EA6DB1926735461004B371F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1826735461004B371F /* NetworkRequest.swift */; };
+		8EA6DB1B26735502004B371F /* ModelNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */; };
+		8EA6DB1D26739761004B371F /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */; };
 		8ECC15052670F2D30079EB1F /* DetailInformationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */; };
 		8ECC1507267105EC0079EB1F /* DetailInformationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */; };
 		8ECC1509267106C60079EB1F /* TableTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */; };
@@ -31,6 +34,9 @@
 		8E9F87DB266D1196007E7375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F87DE266D1196007E7375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F87E0266D1196007E7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EA6DB1826735461004B371F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNetworkRequest.swift; sourceTree = "<group>"; };
+		8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailInformationPage.storyboard; sourceTree = "<group>"; };
 		8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationPageVC.swift; sourceTree = "<group>"; };
 		8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTrackTableViewCell.swift; sourceTree = "<group>"; };
@@ -159,6 +165,8 @@
 			children = (
 				8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */,
 				8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */,
+				8EA6DB1826735461004B371F /* NetworkRequest.swift */,
+				8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -174,6 +182,7 @@
 		8E9F87F1266D1268007E7375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,6 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA6DB1D26739761004B371F /* WeatherCollectionViewCell.swift in Sources */,
+				8EA6DB1B26735502004B371F /* ModelNetworkRequest.swift in Sources */,
+				8EA6DB1926735461004B371F /* NetworkRequest.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8ECC1509267106C60079EB1F /* TableTrackTableViewCell.swift in Sources */,
