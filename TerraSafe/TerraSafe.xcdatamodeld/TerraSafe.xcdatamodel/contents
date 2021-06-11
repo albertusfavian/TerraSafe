@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Gunung" representedClassName="Gunung" syncable="YES" codeGenerationType="class">
+        <attribute name="deskripsi" optional="YES" attributeType="String"/>
+        <attribute name="foto" optional="YES" attributeType="String"/>
+        <attribute name="lokasi" optional="YES" attributeType="String"/>
+        <attribute name="nama" optional="YES" attributeType="String"/>
+        <attribute name="tinggi" optional="YES" attributeType="String"/>
+        <relationship name="gunungRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Track" inverseName="trackRelationship" inverseEntity="Track"/>
+    </entity>
+    <entity name="Objek" representedClassName="Objek" syncable="YES" codeGenerationType="class">
+        <attribute name="deskripsi" optional="YES" attributeType="String"/>
+        <attribute name="foto" optional="YES" attributeType="String"/>
+        <attribute name="nama" optional="YES" attributeType="String"/>
+        <relationship name="objekRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Track" inverseName="trackRelationship2" inverseEntity="Track"/>
+    </entity>
+    <entity name="Pos" representedClassName="Pos" syncable="YES" codeGenerationType="class">
+        <attribute name="facilities" optional="YES" attributeType="String"/>
+        <attribute name="facilitiesIcon" optional="YES" attributeType="String"/>
+        <attribute name="foto" optional="YES" attributeType="String"/>
+        <attribute name="ketinggian" optional="YES" attributeType="String"/>
+        <attribute name="nama" optional="YES" attributeType="String"/>
+        <relationship name="posRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Track" inverseName="trackRelationship1" inverseEntity="Track"/>
+    </entity>
+    <entity name="Track" representedClassName="Track" syncable="YES" codeGenerationType="class">
+        <attribute name="fileGeojson" optional="YES" attributeType="String"/>
+        <attribute name="jarak" optional="YES" attributeType="String"/>
+        <attribute name="nama" optional="YES" attributeType="String"/>
+        <attribute name="nomorBaseCamp" optional="YES" attributeType="String"/>
+        <attribute name="nomorPolisi" optional="YES" attributeType="String"/>
+        <attribute name="nomorRS" optional="YES" attributeType="String"/>
+        <attribute name="terunduh" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="waktuTempuh" optional="YES" attributeType="String"/>
+        <relationship name="trackRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gunung" inverseName="gunungRelationship" inverseEntity="Gunung"/>
+        <relationship name="trackRelationship1" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pos" inverseName="posRelationship" inverseEntity="Pos"/>
+        <relationship name="trackRelationship2" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Objek" inverseName="objekRelationship" inverseEntity="Objek"/>
+    </entity>
+    <elements>
+        <element name="Gunung" positionX="-92.98468017578125" positionY="-77.98675537109375" width="128" height="133"/>
+        <element name="Track" positionX="-103.5996704101562" positionY="148.198486328125" width="152.5259399414062" height="208"/>
+        <element name="Pos" positionX="183.7577514648438" positionY="172.4526062011719" width="128" height="133"/>
+        <element name="Objek" positionX="190.1152954101562" positionY="343.9703979492188" width="128" height="103"/>
+    </elements>
 </model>
