@@ -178,6 +178,11 @@
                             <constraint firstItem="rFg-i6-UqI" firstAttribute="top" secondItem="VVS-fa-qfo" secondAttribute="bottom" constant="8" symbolic="YES" id="zxX-7g-wwe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="trackDurationLbl" destination="kXX-hK-xjK" id="GzI-KK-tp0"/>
+                        <outlet property="trackLengthLbl" destination="1vm-G9-ADz" id="LyW-lP-7NH"/>
+                        <outlet property="trackNameLbl" destination="8bZ-n2-kF4" id="ED2-DM-2XT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMt-VK-dXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

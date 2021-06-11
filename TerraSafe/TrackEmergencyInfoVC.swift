@@ -40,7 +40,7 @@ class TrackEmergencyInfoVC: UIViewController {
         drawerView.attachTo(view: self.view)
         drawerView.backgroundColor = .white
         drawerView.backgroundEffect = .none
-        drawerView.snapPositions = [.collapsed, .partiallyOpen, .open]
+        drawerView.snapPositions = [.collapsed, .partiallyOpen, .open, .closed]
         drawerView.insetAdjustmentBehavior = .automatic
         drawerView.clipsToBounds = true
         drawerView.alpha = 1

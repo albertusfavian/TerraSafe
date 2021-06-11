@@ -8,7 +8,10 @@
 import UIKit
 
 class DrawerVC: UIViewController {
-
+    @IBOutlet weak var trackNameLbl: UILabel!
+    @IBOutlet weak var trackDurationLbl: UILabel!
+    @IBOutlet weak var trackLengthLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
