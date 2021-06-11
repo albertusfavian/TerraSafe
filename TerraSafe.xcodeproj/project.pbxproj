@@ -15,6 +15,18 @@
 		8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */; };
 		8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DB266D1196007E7375 /* Assets.xcassets */; };
 		8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */; };
+		B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DE82672432B0021BCF0 /* CardViewController.swift */; };
+		B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5DE92672432B0021BCF0 /* CardViewController.xib */; };
+		B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DED2672446A0021BCF0 /* DetailViewController.swift */; };
+		B7DFE9C9267163230025433C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9C8267163230025433C /* Home.storyboard */; };
+		B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9CB2671637B0025433C /* HomeViewController.swift */; };
+		B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */; };
+		B7DFE9D1267164A60025433C /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */; };
+		B7DFE9DB267169520025433C /* mountains.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9DA267169520025433C /* mountains.swift */; };
+		B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9E5267171600025433C /* TracksViewController.swift */; };
+		B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */; };
+		B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */; };
+		B7DFE9F32671788A0025433C /* tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9F22671788A0025433C /* tracks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +40,18 @@
 		8E9F87DB266D1196007E7375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F87DE266D1196007E7375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F87E0266D1196007E7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B78A5DE82672432B0021BCF0 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		B78A5DE92672432B0021BCF0 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		B78A5DED2672446A0021BCF0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B7DFE9C8267163230025433C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B7DFE9CB2671637B0025433C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		B7DFE9DA267169520025433C /* mountains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mountains.swift; sourceTree = "<group>"; };
+		B7DFE9E5267171600025433C /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
+		B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		B7DFE9F22671788A0025433C /* tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +84,7 @@
 		8E9F87CE266D1195007E7375 /* TerraSafe */ = {
 			isa = PBXGroup;
 			children = (
+				B7DFE9C4267162890025433C /* Home Page */,
 				8E9F87F2266D12A3007E7375 /* Track Emergency Info Page */,
 				8E9F87E8266D1246007E7375 /* Tips Page */,
 				8E9F87E7266D123E007E7375 /* Saved Page */,
@@ -201,6 +226,57 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B7DFE9C4267162890025433C /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9C5267162930025433C /* Model */,
+				B7DFE9C6267162A00025433C /* View */,
+				B7DFE9C7267162A60025433C /* Controller */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		B7DFE9C5267162930025433C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9DA267169520025433C /* mountains.swift */,
+				B7DFE9F22671788A0025433C /* tracks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7DFE9C6267162A00025433C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9C8267163230025433C /* Home.storyboard */,
+				B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */,
+				B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */,
+				B78A5DE82672432B0021BCF0 /* CardViewController.swift */,
+				B78A5DE92672432B0021BCF0 /* CardViewController.xib */,
+				B78A5DED2672446A0021BCF0 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7DFE9C7267162A60025433C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9CB2671637B0025433C /* HomeViewController.swift */,
+				B7DFE9E5267171600025433C /* TracksViewController.swift */,
+				B7DFE9F726717B120025433C /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7DFE9F726717B120025433C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */,
+				B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,7 +334,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */,
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
+				B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */,
+				B7DFE9D1267164A60025433C /* HomeCollectionViewCell.xib in Resources */,
+				B7DFE9C9267163230025433C /* Home.storyboard in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
 				8E9F87D7266D1195007E7375 /* Main.storyboard in Resources */,
@@ -272,10 +352,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DFE9DB267169520025433C /* mountains.swift in Sources */,
+				B7DFE9F32671788A0025433C /* tracks.swift in Sources */,
+				B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */,
+				B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
+				B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */,
+				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
+				B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
+				B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DFYL38U338;
 				INFOPLIST_FILE = TerraSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,6 +533,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DFYL38U338;
 				INFOPLIST_FILE = TerraSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
