@@ -52,12 +52,16 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tracksCell", for: indexPath) as? TableTrackTableViewCell
         
+        cell?.layer.cornerRadius = 10
+        cell?.layer.borderWidth = 3
+        cell?.layer.borderColor = tableView.backgroundColor?.cgColor
+        cell?.contentView.backgroundColor = UIColor.green
         cell?.trackNameLabel.text = "Sirah Kencong"
         cell?.hourLabel.text = "3hour"
         return cell!
@@ -73,6 +77,7 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "weatherCell", for: indexPath) as? WeatherCollectionViewCell
+        cell?.layer.cornerRadius = 10
         cell?.layer.backgroundColor = UIColor.red.cgColor
         cell?.dateLabel.text = "9 Juni"
         cell?.tempLabel.text = "9*C"
@@ -95,3 +100,5 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
     */
 
 }
+
+
