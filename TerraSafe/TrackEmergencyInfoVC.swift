@@ -119,8 +119,12 @@ class TrackEmergencyInfoVC: UIViewController {
         for f in featureCollection.features {
             if (f.geometry.type.rawValue == "Point") {
                 guard let property = f.properties else { return }
+                if let value = f.geometry.value {
+                    
+                }
                 
-                print(property)
+//                self.mapView.annotations.makePointAnnotationManager()
+//                var p = PointAnnotation(point: .init(.init(latitude: <#T##CLLocationDegrees#>, longitude: <#T##CLLocationDegrees#>)))
             }
         }
         
