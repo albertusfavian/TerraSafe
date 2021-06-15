@@ -24,15 +24,15 @@ class NetworkRequest{
                             listTemp.append(temperatur)
                             listDate.append(convertDateToString(stringDate: datetoday))
                         }
-    //                    print ("Day: \(day)")
+//                        print ("Day: \(day)")
                     }
-    //                print(" ")
-    //              print("day: \(day)")
-    //                print("Temp : \(i.main.temp)")
-    //               print("Temp Max : \(i.main.temp_max)")
-    //                print("Temp Min : \(i.main.temp_min)")
-    //                print("Feels Like : \(i.main.feels_like)")
-    //                print("Humidity : \(i.main.humidity)")
+//                    print(" ")
+//                    print("day: \(day)")
+//                    print("Temp : \(i.main.temp)")
+//                    print("Temp Max : \(i.main.temp_max)")
+//                    print("Temp Min : \(i.main.temp_min)")
+//                    print("Feels Like : \(i.main.feels_like)")
+//                    print("Humidity : \(i.main.humidity)")
                     if let weatherData = i.weather {
                         for j in weatherData {
                             if convertDateToTime(stringDate: datetoday) == "06:00:00" {

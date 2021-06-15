@@ -22,8 +22,9 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
     var listCondition: [String]?
     var listDate: [String]?
     let url = URL(string: "http://api.openweathermap.org/data/2.5/forecast?q=Malang&appid=3e6254eea851a148b52545bce50cba35&units=metric")
-
     let requestService = NetworkRequest()
+    var indexImage: Int = 0
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
