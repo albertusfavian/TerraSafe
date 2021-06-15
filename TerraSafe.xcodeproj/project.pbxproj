@@ -15,6 +15,11 @@
 		8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */; };
 		8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DB266D1196007E7375 /* Assets.xcassets */; };
 		8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */; };
+		8EFE71A8267916FA0066C1E3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71A7267916FA0066C1E3 /* DetailVC.swift */; };
+		8EFE71AA267917070066C1E3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71A9267917070066C1E3 /* Model.swift */; };
+		8EFE71AC267917110066C1E3 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFE71AB267917110066C1E3 /* Tips.storyboard */; };
+		8EFE71B0267918650066C1E3 /* TipsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71AF267918650066C1E3 /* TipsTVC.swift */; };
+		8EFE71B22679198C0066C1E3 /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71B12679198C0066C1E3 /* TipsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		8E9F87DB266D1196007E7375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F87DE266D1196007E7375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F87E0266D1196007E7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EFE71A7267916FA0066C1E3 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		8EFE71A9267917070066C1E3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8EFE71AB267917110066C1E3 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		8EFE71AF267918650066C1E3 /* TipsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTVC.swift; sourceTree = "<group>"; };
+		8EFE71B12679198C0066C1E3 /* TipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +119,7 @@
 		8E9F87E9266D124E007E7375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EFE71A9267917070066C1E3 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +127,7 @@
 		8E9F87EA266D1257007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EFE71AB267917110066C1E3 /* Tips.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -123,6 +135,9 @@
 		8E9F87EB266D125B007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8EFE71A7267916FA0066C1E3 /* DetailVC.swift */,
+				8EFE71AF267918650066C1E3 /* TipsTVC.swift */,
+				8EFE71B12679198C0066C1E3 /* TipsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
+				8EFE71AC267917110066C1E3 /* Tips.storyboard in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
 				8E9F87D7266D1195007E7375 /* Main.storyboard in Resources */,
@@ -272,8 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EFE71A8267916FA0066C1E3 /* DetailVC.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
+				8EFE71AA267917070066C1E3 /* Model.swift in Sources */,
+				8EFE71B0267918650066C1E3 /* TipsTVC.swift in Sources */,
+				8EFE71B22679198C0066C1E3 /* TipsVC.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
 			);
