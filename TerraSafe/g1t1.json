@@ -10,7 +10,8 @@
         "marker-symbol": "campsite",
         "elevation": 2008,
         "facilities": "registration,mosque,toilet,warung,water",
-        "posName": "Camp David"
+        "posName": "Camp David",
+        "kind": "checkpoint"
       },
       "geometry": {
         "type": "Point",
@@ -25,7 +26,9 @@
       "properties": {
         "marker-color": "#fffc41",
         "marker-size": "large",
-        "marker-symbol": "campsite"
+        "marker-symbol": "campsite",
+        "posName": "Camp David",
+        "kind": "checkpoint"
       },
       "geometry": {
         "type": "Point",
@@ -40,7 +43,9 @@
       "properties": {
         "marker-color": "#fffc41",
         "marker-size": "large",
-        "marker-symbol": "triangle-stroked"
+        "marker-symbol": "triangle-stroked",
+        "posName": "Camp David",
+        "kind": "checkpoint"
       },
       "geometry": {
         "type": "Point",
@@ -56,7 +61,9 @@
         "marker-color": "#fffc41",
         "marker-size": "large",
         "marker-symbol": "campsite",
-        "alternative": "true"
+        "alternative": "true",
+        "posName": "Camp David",
+        "kind": "checkpoint"
       },
       "geometry": {
         "type": "Point",
@@ -72,8 +79,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "large",
         "marker-symbol": "triangle",
-        "kind": "tour-object",
-        "title": "summit"
+        "title": "Puncak Gunung Papandayan",
+        "kind": "summit"
       },
       "geometry": {
         "type": "Point",
@@ -89,7 +96,7 @@
         "marker-color": "#d95000",
         "marker-size": "medium",
         "marker-symbol": "monument",
-        "kind": "tour-object",
+        "kind": "park",
         "title": "Hutan Mati"
       },
       "geometry": {

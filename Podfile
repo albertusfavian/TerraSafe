@@ -7,5 +7,4 @@ target 'TerraSafe' do
 
   # Pods for TerraSafe
   pod 'MapboxMaps', '10.0.0-beta.21'
-  pod "DrawerView"
 end

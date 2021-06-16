@@ -1,5 +1,4 @@
 PODS:
-  - DrawerView (1.3.3)
   - MapboxCommon (13.0.0)
   - MapboxCoreMaps (10.0.0-beta.23):
     - MapboxCommon (~> 13.0.0)
@@ -12,12 +11,10 @@ PODS:
   - Turf (2.0.0-alpha.3)
 
 DEPENDENCIES:
-  - DrawerView
   - MapboxMaps (= 10.0.0-beta.21)
 
 SPEC REPOS:
   trunk:
-    - DrawerView
     - MapboxCommon
     - MapboxCoreMaps
     - MapboxMaps
@@ -25,13 +22,12 @@ SPEC REPOS:
     - Turf
 
 SPEC CHECKSUMS:
-  DrawerView: 41c5e5d6593d86335ee2cf9b18d738835593dbc1
   MapboxCommon: 8fafaddbeafe9801d9bfdeac24380df9da195277
   MapboxCoreMaps: 1c68457fc2393293fdd56c2315acb673db7f2af1
   MapboxMaps: 3423025d12624d030a8ac19dd099875781c8b81d
   MapboxMobileEvents: 6e8f4b7c86e2fbc5a01605fd2c5e720ad5434ff6
   Turf: ec9b01ef9386ab53545a1f763b7296c9ce3590d1
 
-PODFILE CHECKSUM: f00341a02fc82e8b4b1cc3e000d3bdc1b8c098aa
+PODFILE CHECKSUM: 1b072063d7ef6c2bc9461452211946cf0cbfae88
 
 COCOAPODS: 1.10.1
