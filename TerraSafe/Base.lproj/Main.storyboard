@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -63,7 +63,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="o8J-ED-dqQ" kind="relationship" relationship="viewControllers" id="YcK-Hh-m0D"/>
+                        <segue destination="zeE-Aw-gIn" kind="relationship" relationship="viewControllers" id="5Ds-FY-IAM"/>
                         <segue destination="i8p-yQ-Nfk" kind="relationship" relationship="viewControllers" id="JVL-iz-2bs"/>
                         <segue destination="MYN-jq-qiY" kind="relationship" relationship="viewControllers" id="tyZ-MA-Zr6"/>
                     </connections>
@@ -73,7 +73,7 @@
             <point key="canvasLocation" x="1112" y="86"/>
         </scene>
         <!--Home-->
-        <scene sceneID="dDX-9K-YwK">
+        <scene sceneID="HgN-rD-R8V">
             <objects>
                 <navigationController wantsFullScreenLayout="YES" modalPresentationStyle="fullScreen" id="o8J-ED-dqQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" selectedImage="triangle.fill" catalog="system" id="RkJ-Rm-HcO"/>
@@ -169,7 +169,6 @@
     <resources>
         <image name="Logo Onboarding" width="1000" height="1000"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
-        <image name="triangle.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
