@@ -3,11 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19A26EEF51F23183FF392199 /* Pods_TerraSafe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCDBF4C6A549F2E6894895B2 /* Pods_TerraSafe.framework */; };
+		29523B44267776F700E194C8 /* mountain.json in Resources */ = {isa = PBXBuildFile; fileRef = 29523B43267776F700E194C8 /* mountain.json */; };
+		29523B462677777C00E194C8 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29523B452677777C00E194C8 /* Mountain.swift */; };
+		297C07B3266FDCFB00885885 /* g1t1.json in Resources */ = {isa = PBXBuildFile; fileRef = 297C07B2266FDCFB00885885 /* g1t1.json */; };
+		297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */; };
+		297C07B72670CB0400885885 /* DrawerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B62670CB0400885885 /* DrawerVC.swift */; };
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
+		8E909AEA266E544E007D63E8 /* SavedPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E909AE9266E544E007D63E8 /* SavedPage.storyboard */; };
+		8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */; };
+		8E909AEE266E5CD1007D63E8 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E909AED266E5CD1007D63E8 /* SavedVC.swift */; };
 		8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87CF266D1195007E7375 /* AppDelegate.swift */; };
 		8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D1266D1195007E7375 /* SceneDelegate.swift */; };
 		8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D3266D1195007E7375 /* ViewController.swift */; };
@@ -20,10 +29,38 @@
 		8EFE71AC267917110066C1E3 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFE71AB267917110066C1E3 /* Tips.storyboard */; };
 		8EFE71B0267918650066C1E3 /* TipsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71AF267918650066C1E3 /* TipsTVC.swift */; };
 		8EFE71B22679198C0066C1E3 /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71B12679198C0066C1E3 /* TipsVC.swift */; };
+		8EA6DB1926735461004B371F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1826735461004B371F /* NetworkRequest.swift */; };
+		8EA6DB1B26735502004B371F /* ModelNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */; };
+		8EA6DB1D26739761004B371F /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */; };
+		8ECC15052670F2D30079EB1F /* DetailInformationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */; };
+		8ECC1507267105EC0079EB1F /* DetailInformationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */; };
+		8ECC1509267106C60079EB1F /* TableTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */; };
+		B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DE82672432B0021BCF0 /* CardViewController.swift */; };
+		B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5DE92672432B0021BCF0 /* CardViewController.xib */; };
+		B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DED2672446A0021BCF0 /* DetailViewController.swift */; };
+		B7DFE9C9267163230025433C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9C8267163230025433C /* Home.storyboard */; };
+		B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9CB2671637B0025433C /* HomeViewController.swift */; };
+		B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */; };
+		B7DFE9D1267164A60025433C /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */; };
+		B7DFE9DB267169520025433C /* mountains.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9DA267169520025433C /* mountains.swift */; };
+		B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9E5267171600025433C /* TracksViewController.swift */; };
+		B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */; };
+		B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */; };
+		B7DFE9F32671788A0025433C /* tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9F22671788A0025433C /* tracks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2088D806C9FE95FA443BEE87 /* Pods-TerraSafe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.debug.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.debug.xcconfig"; sourceTree = "<group>"; };
+		29523B43267776F700E194C8 /* mountain.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mountain.json; sourceTree = "<group>"; };
+		29523B452677777C00E194C8 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
+		297C07B2266FDCFB00885885 /* g1t1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = g1t1.json; sourceTree = "<group>"; };
+		297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackEmergencyInfoVC.swift; path = TerraSafe/TrackEmergencyInfoVC.swift; sourceTree = SOURCE_ROOT; };
+		297C07B62670CB0400885885 /* DrawerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawerVC.swift; path = TerraSafe/DrawerVC.swift; sourceTree = SOURCE_ROOT; };
+		6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.release.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.release.xcconfig"; sourceTree = "<group>"; };
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
+		8E909AE9266E544E007D63E8 /* SavedPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedPage.storyboard; sourceTree = "<group>"; };
+		8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
+		8E909AED266E5CD1007D63E8 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		8E9F87CC266D1195007E7375 /* TerraSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9F87CF266D1195007E7375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E9F87D1266D1195007E7375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +75,25 @@
 		8EFE71AB267917110066C1E3 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
 		8EFE71AF267918650066C1E3 /* TipsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTVC.swift; sourceTree = "<group>"; };
 		8EFE71B12679198C0066C1E3 /* TipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
+		8EA6DB1826735461004B371F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNetworkRequest.swift; sourceTree = "<group>"; };
+		8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailInformationPage.storyboard; sourceTree = "<group>"; };
+		8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationPageVC.swift; sourceTree = "<group>"; };
+		8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTrackTableViewCell.swift; sourceTree = "<group>"; };
+		B78A5DE82672432B0021BCF0 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		B78A5DE92672432B0021BCF0 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		B78A5DED2672446A0021BCF0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B7DFE9C8267163230025433C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B7DFE9CB2671637B0025433C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		B7DFE9DA267169520025433C /* mountains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mountains.swift; sourceTree = "<group>"; };
+		B7DFE9E5267171600025433C /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
+		B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		B7DFE9F22671788A0025433C /* tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracks.swift; sourceTree = "<group>"; };
+		BCDBF4C6A549F2E6894895B2 /* Pods_TerraSafe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TerraSafe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +101,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A26EEF51F23183FF392199 /* Pods_TerraSafe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0478D681C012787FA8253012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBF4C6A549F2E6894895B2 /* Pods_TerraSafe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EB57BF2C2C9D6E82B3C7673 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2088D806C9FE95FA443BEE87 /* Pods-TerraSafe.debug.xcconfig */,
+				6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E9F87C3266D1195007E7375 = {
 			isa = PBXGroup;
 			children = (
 				8E9F87CE266D1195007E7375 /* TerraSafe */,
 				8E9F87CD266D1195007E7375 /* Products */,
+				6EB57BF2C2C9D6E82B3C7673 /* Pods */,
+				0478D681C012787FA8253012 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +146,7 @@
 		8E9F87CE266D1195007E7375 /* TerraSafe */ = {
 			isa = PBXGroup;
 			children = (
+				B7DFE9C4267162890025433C /* Home Page */,
 				8E9F87F2266D12A3007E7375 /* Track Emergency Info Page */,
 				8E9F87E8266D1246007E7375 /* Tips Page */,
 				8E9F87E7266D123E007E7375 /* Saved Page */,
@@ -82,6 +159,9 @@
 				8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */,
 				8E9F87E0266D1196007E7375 /* Info.plist */,
 				8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */,
+				297C07B2266FDCFB00885885 /* g1t1.json */,
+				29523B43267776F700E194C8 /* mountain.json */,
+				29523B452677777C00E194C8 /* Mountain.swift */,
 			);
 			path = TerraSafe;
 			sourceTree = "<group>";
@@ -145,6 +225,8 @@
 		8E9F87EC266D1265007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */,
+				8E909AED266E5CD1007D63E8 /* SavedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +234,7 @@
 		8E9F87ED266D1265007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E909AE9266E544E007D63E8 /* SavedPage.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,6 +249,10 @@
 		8E9F87EF266D1268007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */,
+				8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */,
+				8EA6DB1826735461004B371F /* NetworkRequest.swift */,
+				8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -173,6 +260,7 @@
 		8E9F87F0266D1268007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -180,6 +268,7 @@
 		8E9F87F1266D1268007E7375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +286,8 @@
 		8E9F87F3266D12BC007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */,
+				297C07B62670CB0400885885 /* DrawerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +307,57 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B7DFE9C4267162890025433C /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9C5267162930025433C /* Model */,
+				B7DFE9C6267162A00025433C /* View */,
+				B7DFE9C7267162A60025433C /* Controller */,
+			);
+			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		B7DFE9C5267162930025433C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9DA267169520025433C /* mountains.swift */,
+				B7DFE9F22671788A0025433C /* tracks.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7DFE9C6267162A00025433C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9C8267163230025433C /* Home.storyboard */,
+				B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */,
+				B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */,
+				B78A5DE82672432B0021BCF0 /* CardViewController.swift */,
+				B78A5DE92672432B0021BCF0 /* CardViewController.xib */,
+				B78A5DED2672446A0021BCF0 /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7DFE9C7267162A60025433C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9CB2671637B0025433C /* HomeViewController.swift */,
+				B7DFE9E5267171600025433C /* TracksViewController.swift */,
+				B7DFE9F726717B120025433C /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B7DFE9F726717B120025433C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */,
+				B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,9 +365,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E9F87E3266D1196007E7375 /* Build configuration list for PBXNativeTarget "TerraSafe" */;
 			buildPhases = (
+				0CF2F973046A3F4ADA5A61C4 /* [CP] Check Pods Manifest.lock */,
 				8E9F87C8266D1195007E7375 /* Sources */,
 				8E9F87C9266D1195007E7375 /* Frameworks */,
 				8E9F87CA266D1195007E7375 /* Resources */,
+				AB82EBD2CFC2300E17F44707 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -273,15 +417,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E909AEA266E544E007D63E8 /* SavedPage.storyboard in Resources */,
+				29523B44267776F700E194C8 /* mountain.json in Resources */,
+				297C07B3266FDCFB00885885 /* g1t1.json in Resources */,
+				B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */,
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
 				8EFE71AC267917110066C1E3 /* Tips.storyboard in Resources */,
+				B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */,
+				B7DFE9D1267164A60025433C /* HomeCollectionViewCell.xib in Resources */,
+				B7DFE9C9267163230025433C /* Home.storyboard in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
+				8ECC15052670F2D30079EB1F /* DetailInformationPage.storyboard in Resources */,
 				8E9F87D7266D1195007E7375 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CF2F973046A3F4ADA5A61C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TerraSafe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB82EBD2CFC2300E17F44707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraSafe/Pods-TerraSafe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TerraSafe/Pods-TerraSafe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TerraSafe/Pods-TerraSafe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E9F87C8266D1195007E7375 /* Sources */ = {
@@ -289,13 +483,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EFE71A8267916FA0066C1E3 /* DetailVC.swift in Sources */,
+				8EA6DB1D26739761004B371F /* WeatherCollectionViewCell.swift in Sources */,
+				8EA6DB1B26735502004B371F /* ModelNetworkRequest.swift in Sources */,
+				8EA6DB1926735461004B371F /* NetworkRequest.swift in Sources */,
+				B7DFE9DB267169520025433C /* mountains.swift in Sources */,
+				B7DFE9F32671788A0025433C /* tracks.swift in Sources */,
+				B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */,
+				B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
+				297C07B72670CB0400885885 /* DrawerVC.swift in Sources */,
+				B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */,
+				29523B462677777C00E194C8 /* Mountain.swift in Sources */,
+				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8EFE71AA267917070066C1E3 /* Model.swift in Sources */,
 				8EFE71B0267918650066C1E3 /* TipsTVC.swift in Sources */,
 				8EFE71B22679198C0066C1E3 /* TipsVC.swift in Sources */,
+				8ECC1509267106C60079EB1F /* TableTrackTableViewCell.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
+				8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */,
+				8E909AEE266E5CD1007D63E8 /* SavedVC.swift in Sources */,
+				B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
+				8ECC1507267105EC0079EB1F /* DetailInformationPageVC.swift in Sources */,
+				297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */,
+				B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,12 +651,14 @@
 		};
 		8E9F87E4266D1196007E7375 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2088D806C9FE95FA443BEE87 /* Pods-TerraSafe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DFYL38U338;
 				INFOPLIST_FILE = TerraSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,18 +666,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = albertPersonalProject.TerraSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8E9F87E5266D1196007E7375 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DFYL38U338;
 				INFOPLIST_FILE = TerraSafe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +687,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = albertPersonalProject.TerraSafe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

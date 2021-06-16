@@ -1,4 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E241" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Gunung" representedClassName="Gunung" syncable="YES" codeGenerationType="class">
+        <attribute name="deskripsi" optional="YES" attributeType="String"/>
+        <attribute name="foto" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="lokasi" optional="YES" attributeType="String"/>
+        <attribute name="nama" optional="YES" attributeType="String"/>
+        <attribute name="tinggi" optional="YES" attributeType="String"/>
+        <relationship name="track" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Track" inverseName="gunung" inverseEntity="Track"/>
+    </entity>
+    <entity name="Objek" representedClassName="Objek" syncable="YES" codeGenerationType="class">
+        <attribute name="deskripsi" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="facilities" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="facilitiesIcon" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="foto" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="nama" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="possibleDangers" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="possibleDangersIcon" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="reachableVia" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <relationship name="track" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Track" inverseName="objek" inverseEntity="Track"/>
+    </entity>
+    <entity name="Pos" representedClassName="Pos" syncable="YES" codeGenerationType="class">
+        <attribute name="danger" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="dangerIcon" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="facilities" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="facilitiesIcon" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="foto" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="hours" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="jarak" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="ketinggian" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="nama" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="trackConditions" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <attribute name="waktuTempuh" optional="YES" attributeType="Transformable" customClassName="[String]"/>
+        <relationship name="track" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Track" inverseName="pos" inverseEntity="Track"/>
+    </entity>
+    <entity name="Track" representedClassName="Track" syncable="YES" codeGenerationType="class">
+        <attribute name="fileGeojson" optional="YES" attributeType="String"/>
+        <attribute name="jarak" optional="YES" attributeType="String"/>
+        <attribute name="nama" optional="YES" attributeType="String"/>
+        <attribute name="nomorBaseCamp" optional="YES" attributeType="String"/>
+        <attribute name="nomorPolisi" optional="YES" attributeType="String"/>
+        <attribute name="nomorRS" optional="YES" attributeType="String"/>
+        <attribute name="terunduh" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="waktuTempuh" optional="YES" attributeType="String"/>
+        <relationship name="gunung" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Gunung" inverseName="track" inverseEntity="Gunung"/>
+        <relationship name="objek" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Objek" inverseName="track" inverseEntity="Objek"/>
+        <relationship name="pos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pos" inverseName="track" inverseEntity="Pos"/>
+    </entity>
+    <elements>
+        <element name="Gunung" positionX="-92.98468017578125" positionY="-77.98675537109375" width="128" height="148"/>
+        <element name="Objek" positionX="289.6152954101562" positionY="220.9703979492188" width="128" height="164"/>
+        <element name="Pos" positionX="302.2577514648438" positionY="392.9526062011719" width="128" height="209"/>
+        <element name="Track" positionX="-103.5996704101562" positionY="148.198486328125" width="152.5259399414062" height="194"/>
+    </elements>
 </model>
