@@ -13,6 +13,7 @@
 		297C07B3266FDCFB00885885 /* g1t1.json in Resources */ = {isa = PBXBuildFile; fileRef = 297C07B2266FDCFB00885885 /* g1t1.json */; };
 		297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */; };
 		29B548A42678C31A000D8821 /* Checkpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B548A32678C31A000D8821 /* Checkpoint.swift */; };
+		8E3F82092679E736005DBA59 /* sampleNewTabPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3F82072679E736005DBA59 /* sampleNewTabPage.storyboard */; };
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
 		8E909AEA266E544E007D63E8 /* SavedPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E909AE9266E544E007D63E8 /* SavedPage.storyboard */; };
 		8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */; };
@@ -24,17 +25,17 @@
 		8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */; };
 		8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DB266D1196007E7375 /* Assets.xcassets */; };
 		8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */; };
-		8EFE71A8267916FA0066C1E3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71A7267916FA0066C1E3 /* DetailVC.swift */; };
-		8EFE71AA267917070066C1E3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71A9267917070066C1E3 /* Model.swift */; };
-		8EFE71AC267917110066C1E3 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFE71AB267917110066C1E3 /* Tips.storyboard */; };
-		8EFE71B0267918650066C1E3 /* TipsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71AF267918650066C1E3 /* TipsTVC.swift */; };
-		8EFE71B22679198C0066C1E3 /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71B12679198C0066C1E3 /* TipsVC.swift */; };
 		8EA6DB1926735461004B371F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1826735461004B371F /* NetworkRequest.swift */; };
 		8EA6DB1B26735502004B371F /* ModelNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */; };
 		8EA6DB1D26739761004B371F /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */; };
 		8ECC15052670F2D30079EB1F /* DetailInformationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */; };
 		8ECC1507267105EC0079EB1F /* DetailInformationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */; };
 		8ECC1509267106C60079EB1F /* TableTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */; };
+		8EFE71A8267916FA0066C1E3 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71A7267916FA0066C1E3 /* DetailVC.swift */; };
+		8EFE71AA267917070066C1E3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71A9267917070066C1E3 /* Model.swift */; };
+		8EFE71AC267917110066C1E3 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EFE71AB267917110066C1E3 /* Tips.storyboard */; };
+		8EFE71B0267918650066C1E3 /* TipsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71AF267918650066C1E3 /* TipsTVC.swift */; };
+		8EFE71B22679198C0066C1E3 /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFE71B12679198C0066C1E3 /* TipsVC.swift */; };
 		B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DE82672432B0021BCF0 /* CardViewController.swift */; };
 		B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5DE92672432B0021BCF0 /* CardViewController.xib */; };
 		B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DED2672446A0021BCF0 /* DetailViewController.swift */; };
@@ -57,6 +58,8 @@
 		297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackEmergencyInfoVC.swift; path = TerraSafe/TrackEmergencyInfoVC.swift; sourceTree = SOURCE_ROOT; };
 		29B548A32678C31A000D8821 /* Checkpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Checkpoint.swift; path = TerraSafe/Checkpoint.swift; sourceTree = SOURCE_ROOT; };
 		6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.release.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.release.xcconfig"; sourceTree = "<group>"; };
+		8E3F82062679E5D0005DBA59 /* samplePage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = samplePage.storyboard; path = "/Users/mac-albert/Desktop/TerraSafe/TerraSafe/Home Page/View/samplePage.storyboard"; sourceTree = "<absolute>"; };
+		8E3F82082679E736005DBA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TerraSafe/Base.lproj/sampleNewTabPage.storyboard; sourceTree = "<group>"; };
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
 		8E909AE9266E544E007D63E8 /* SavedPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedPage.storyboard; sourceTree = "<group>"; };
 		8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
@@ -70,17 +73,17 @@
 		8E9F87DB266D1196007E7375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F87DE266D1196007E7375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F87E0266D1196007E7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8EFE71A7267916FA0066C1E3 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		8EFE71A9267917070066C1E3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		8EFE71AB267917110066C1E3 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
-		8EFE71AF267918650066C1E3 /* TipsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTVC.swift; sourceTree = "<group>"; };
-		8EFE71B12679198C0066C1E3 /* TipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
 		8EA6DB1826735461004B371F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNetworkRequest.swift; sourceTree = "<group>"; };
 		8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailInformationPage.storyboard; sourceTree = "<group>"; };
 		8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationPageVC.swift; sourceTree = "<group>"; };
 		8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTrackTableViewCell.swift; sourceTree = "<group>"; };
+		8EFE71A7267916FA0066C1E3 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		8EFE71A9267917070066C1E3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8EFE71AB267917110066C1E3 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		8EFE71AF267918650066C1E3 /* TipsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTVC.swift; sourceTree = "<group>"; };
+		8EFE71B12679198C0066C1E3 /* TipsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
 		B78A5DE82672432B0021BCF0 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		B78A5DE92672432B0021BCF0 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		B78A5DED2672446A0021BCF0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +131,7 @@
 		8E9F87C3266D1195007E7375 = {
 			isa = PBXGroup;
 			children = (
+				8E3F82072679E736005DBA59 /* sampleNewTabPage.storyboard */,
 				8E9F87CE266D1195007E7375 /* TerraSafe */,
 				8E9F87CD266D1195007E7375 /* Products */,
 				6EB57BF2C2C9D6E82B3C7673 /* Pods */,
@@ -335,6 +339,7 @@
 				B78A5DE82672432B0021BCF0 /* CardViewController.swift */,
 				B78A5DE92672432B0021BCF0 /* CardViewController.xib */,
 				B78A5DED2672446A0021BCF0 /* DetailViewController.swift */,
+				8E3F82062679E5D0005DBA59 /* samplePage.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +426,7 @@
 				29523B44267776F700E194C8 /* mountain.json in Resources */,
 				297C07B3266FDCFB00885885 /* g1t1.json in Resources */,
 				B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */,
+				8E3F82092679E736005DBA59 /* sampleNewTabPage.storyboard in Resources */,
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
 				8EFE71AC267917110066C1E3 /* Tips.storyboard in Resources */,
 				B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */,
@@ -514,6 +520,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8E3F82072679E736005DBA59 /* sampleNewTabPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E3F82082679E736005DBA59 /* Base */,
+			);
+			name = sampleNewTabPage.storyboard;
+			sourceTree = "<group>";
+		};
 		8E9F87D5266D1195007E7375 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

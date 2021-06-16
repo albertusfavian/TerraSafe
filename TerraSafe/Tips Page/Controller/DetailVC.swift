@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UIScrollViewDelegate {
+class DetailTipsViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var imageViewDetail: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

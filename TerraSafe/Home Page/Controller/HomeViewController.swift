@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
     
     
     override func viewDidLoad() {
+//        self.title = "Prama"
         let nib = UINib(nibName: "\(HomeCollectionViewCell.self)", bundle: nil)
         mountainCollectionView.register(nib, forCellWithReuseIdentifier: "homeCell")
     }

@@ -38,9 +38,10 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
             self.listDate = dateArray
             print(self.listTemp, self.listCondition, self.listDate)
         }
-        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController!.navigationBar.shadowImage = UIImage()
-        self.navigationController!.navigationBar.isTranslucent = true
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.view.backgroundColor = .red
         descriptionLabel.text = "Gunung Papandayan adalah gunung api strato yang terletak di Kabupaten Garut, Jawa Barat tepatnya di Kecamatan Cisurupan."
         locationLabel.text = "Kabupaten Garut, Jawa Barat"
         heightLabel.text = "2665 meter"
@@ -49,6 +50,18 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        // Restore the navigation bar to default
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        navigationController?.navigationBar.shadowImage = nil
+    }
 
     
     

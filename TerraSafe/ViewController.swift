@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        UINavigationBar.appearance().frame = CGRect(x: 0.0, y: 0.0, width: view.frame.size.width, height: 210.0)
         getArrayOfMountains()
     }
 
