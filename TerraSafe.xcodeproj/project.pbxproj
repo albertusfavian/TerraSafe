@@ -15,18 +15,33 @@
 		8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */; };
 		8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DB266D1196007E7375 /* Assets.xcassets */; };
 		8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */; };
-		B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DE82672432B0021BCF0 /* CardViewController.swift */; };
-		B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5DE92672432B0021BCF0 /* CardViewController.xib */; };
-		B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DED2672446A0021BCF0 /* DetailViewController.swift */; };
+		B78A5E63267387980021BCF0 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5E62267387980021BCF0 /* MapsViewController.swift */; };
+		B78A5E68267714C60021BCF0 /* PosImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5E66267714C60021BCF0 /* PosImageCollectionViewCell.swift */; };
+		B78A5E69267714C60021BCF0 /* PosImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5E67267714C60021BCF0 /* PosImageCollectionViewCell.xib */; };
+		B78A5E6C2677155D0021BCF0 /* PosImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5E6B2677155D0021BCF0 /* PosImages.swift */; };
+		B78A5E8226771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5E8026771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.swift */; };
+		B78A5E8326771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5E8126771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.xib */; };
+		B78A5E8726771F460021BCF0 /* PosDangerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5E8526771F460021BCF0 /* PosDangerCollectionViewCell.swift */; };
+		B78A5E8826771F460021BCF0 /* PosDangerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5E8626771F460021BCF0 /* PosDangerCollectionViewCell.xib */; };
+		B78A5E8B2677206F0021BCF0 /* PosFacilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5E8A2677206F0021BCF0 /* PosFacilities.swift */; };
+		B78A5E8E2677207F0021BCF0 /* PosDangers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5E8D2677207F0021BCF0 /* PosDangers.swift */; };
+		B78A5F412677AB960021BCF0 /* WisataImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5F3F2677AB960021BCF0 /* WisataImageCollectionViewCell.swift */; };
+		B78A5F422677AB960021BCF0 /* WisataImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5F402677AB960021BCF0 /* WisataImageCollectionViewCell.xib */; };
+		B78A5F472677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5F452677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.swift */; };
+		B78A5F482677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5F462677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.xib */; };
+		B78A5F4C2677AC360021BCF0 /* WisataDangerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5F4A2677AC360021BCF0 /* WisataDangerCollectionViewCell.swift */; };
+		B78A5F4D2677AC360021BCF0 /* WisataDangerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5F4B2677AC360021BCF0 /* WisataDangerCollectionViewCell.xib */; };
+		B78A5F522677B1CA0021BCF0 /* WisataImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5F512677B1CA0021BCF0 /* WisataImages.swift */; };
+		B78A5F552677B2240021BCF0 /* WisataFacilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5F542677B2240021BCF0 /* WisataFacilities.swift */; };
+		B78A5F582677B2300021BCF0 /* WisataDangers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5F572677B2300021BCF0 /* WisataDangers.swift */; };
+		B78A5F5E2678D0DF0021BCF0 /* Initial.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5F5D2678D0DF0021BCF0 /* Initial.swift */; };
 		B7DFE9C9267163230025433C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9C8267163230025433C /* Home.storyboard */; };
 		B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9CB2671637B0025433C /* HomeViewController.swift */; };
 		B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */; };
 		B7DFE9D1267164A60025433C /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */; };
-		B7DFE9DB267169520025433C /* mountains.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9DA267169520025433C /* mountains.swift */; };
 		B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9E5267171600025433C /* TracksViewController.swift */; };
 		B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */; };
 		B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */; };
-		B7DFE9F32671788A0025433C /* tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFE9F22671788A0025433C /* tracks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,18 +55,33 @@
 		8E9F87DB266D1196007E7375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F87DE266D1196007E7375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F87E0266D1196007E7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B78A5DE82672432B0021BCF0 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
-		B78A5DE92672432B0021BCF0 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
-		B78A5DED2672446A0021BCF0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B78A5E62267387980021BCF0 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		B78A5E66267714C60021BCF0 /* PosImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78A5E67267714C60021BCF0 /* PosImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		B78A5E6B2677155D0021BCF0 /* PosImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosImages.swift; sourceTree = "<group>"; };
+		B78A5E8026771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosFacilitiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78A5E8126771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosFacilitiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		B78A5E8526771F460021BCF0 /* PosDangerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosDangerCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78A5E8626771F460021BCF0 /* PosDangerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosDangerCollectionViewCell.xib; sourceTree = "<group>"; };
+		B78A5E8A2677206F0021BCF0 /* PosFacilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosFacilities.swift; sourceTree = "<group>"; };
+		B78A5E8D2677207F0021BCF0 /* PosDangers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosDangers.swift; sourceTree = "<group>"; };
+		B78A5F3F2677AB960021BCF0 /* WisataImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78A5F402677AB960021BCF0 /* WisataImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WisataImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		B78A5F452677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataFacilitiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78A5F462677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WisataFacilitiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		B78A5F4A2677AC360021BCF0 /* WisataDangerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataDangerCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78A5F4B2677AC360021BCF0 /* WisataDangerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WisataDangerCollectionViewCell.xib; sourceTree = "<group>"; };
+		B78A5F512677B1CA0021BCF0 /* WisataImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataImages.swift; sourceTree = "<group>"; };
+		B78A5F542677B2240021BCF0 /* WisataFacilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataFacilities.swift; sourceTree = "<group>"; };
+		B78A5F572677B2300021BCF0 /* WisataDangers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WisataDangers.swift; sourceTree = "<group>"; };
+		B78A5F5D2678D0DF0021BCF0 /* Initial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initial.swift; sourceTree = "<group>"; };
 		B7DFE9C8267163230025433C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B7DFE9CB2671637B0025433C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
-		B7DFE9DA267169520025433C /* mountains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mountains.swift; sourceTree = "<group>"; };
 		B7DFE9E5267171600025433C /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
 		B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
 		B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
-		B7DFE9F22671788A0025433C /* tracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tracks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,9 +256,70 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B78A5E7126771BB70021BCF0 /* DetailTrackPos */ = {
+			isa = PBXGroup;
+			children = (
+				B78A5E66267714C60021BCF0 /* PosImageCollectionViewCell.swift */,
+				B78A5E8526771F460021BCF0 /* PosDangerCollectionViewCell.swift */,
+				B78A5E8026771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.swift */,
+			);
+			path = DetailTrackPos;
+			sourceTree = "<group>";
+		};
+		B78A5E7326771DDA0021BCF0 /* DetailTrackPosView */ = {
+			isa = PBXGroup;
+			children = (
+				B78A5E67267714C60021BCF0 /* PosImageCollectionViewCell.xib */,
+				B78A5E8126771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.xib */,
+				B78A5E8626771F460021BCF0 /* PosDangerCollectionViewCell.xib */,
+			);
+			path = DetailTrackPosView;
+			sourceTree = "<group>";
+		};
+		B78A5E9126772B130021BCF0 /* DetailTrackWisata */ = {
+			isa = PBXGroup;
+			children = (
+				B78A5F3F2677AB960021BCF0 /* WisataImageCollectionViewCell.swift */,
+				B78A5F452677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.swift */,
+				B78A5F4A2677AC360021BCF0 /* WisataDangerCollectionViewCell.swift */,
+			);
+			path = DetailTrackWisata;
+			sourceTree = "<group>";
+		};
+		B78A5F3E2677AA120021BCF0 /* DetailTrackWisataView */ = {
+			isa = PBXGroup;
+			children = (
+				B78A5F402677AB960021BCF0 /* WisataImageCollectionViewCell.xib */,
+				B78A5F462677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.xib */,
+				B78A5F4B2677AC360021BCF0 /* WisataDangerCollectionViewCell.xib */,
+			);
+			path = DetailTrackWisataView;
+			sourceTree = "<group>";
+		};
+		B78A5F4F2677B15C0021BCF0 /* Pos */ = {
+			isa = PBXGroup;
+			children = (
+				B78A5E6B2677155D0021BCF0 /* PosImages.swift */,
+				B78A5E8A2677206F0021BCF0 /* PosFacilities.swift */,
+				B78A5E8D2677207F0021BCF0 /* PosDangers.swift */,
+			);
+			path = Pos;
+			sourceTree = "<group>";
+		};
+		B78A5F502677B18F0021BCF0 /* Wisata */ = {
+			isa = PBXGroup;
+			children = (
+				B78A5F512677B1CA0021BCF0 /* WisataImages.swift */,
+				B78A5F542677B2240021BCF0 /* WisataFacilities.swift */,
+				B78A5F572677B2300021BCF0 /* WisataDangers.swift */,
+			);
+			path = Wisata;
+			sourceTree = "<group>";
+		};
 		B7DFE9C4267162890025433C /* Home Page */ = {
 			isa = PBXGroup;
 			children = (
+				B78A5F5D2678D0DF0021BCF0 /* Initial.swift */,
 				B7DFE9C5267162930025433C /* Model */,
 				B7DFE9C6267162A00025433C /* View */,
 				B7DFE9C7267162A60025433C /* Controller */,
@@ -239,8 +330,8 @@
 		B7DFE9C5267162930025433C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B7DFE9DA267169520025433C /* mountains.swift */,
-				B7DFE9F22671788A0025433C /* tracks.swift */,
+				B78A5F4F2677B15C0021BCF0 /* Pos */,
+				B78A5F502677B18F0021BCF0 /* Wisata */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -251,9 +342,8 @@
 				B7DFE9C8267163230025433C /* Home.storyboard */,
 				B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */,
 				B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */,
-				B78A5DE82672432B0021BCF0 /* CardViewController.swift */,
-				B78A5DE92672432B0021BCF0 /* CardViewController.xib */,
-				B78A5DED2672446A0021BCF0 /* DetailViewController.swift */,
+				B78A5F3E2677AA120021BCF0 /* DetailTrackWisataView */,
+				B78A5E7326771DDA0021BCF0 /* DetailTrackPosView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,6 +353,7 @@
 			children = (
 				B7DFE9CB2671637B0025433C /* HomeViewController.swift */,
 				B7DFE9E5267171600025433C /* TracksViewController.swift */,
+				B78A5E62267387980021BCF0 /* MapsViewController.swift */,
 				B7DFE9F726717B120025433C /* Cell */,
 			);
 			path = Controller;
@@ -273,6 +364,8 @@
 			children = (
 				B7DFE9CE267164A60025433C /* HomeCollectionViewCell.swift */,
 				B7DFE9EC2671762F0025433C /* TrackTableViewCell.swift */,
+				B78A5E7126771BB70021BCF0 /* DetailTrackPos */,
+				B78A5E9126772B130021BCF0 /* DetailTrackWisata */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -334,11 +427,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */,
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
 				B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */,
 				B7DFE9D1267164A60025433C /* HomeCollectionViewCell.xib in Resources */,
+				B78A5F422677AB960021BCF0 /* WisataImageCollectionViewCell.xib in Resources */,
+				B78A5F482677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.xib in Resources */,
+				B78A5E8326771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.xib in Resources */,
+				B78A5E69267714C60021BCF0 /* PosImageCollectionViewCell.xib in Resources */,
 				B7DFE9C9267163230025433C /* Home.storyboard in Resources */,
+				B78A5F4D2677AC360021BCF0 /* WisataDangerCollectionViewCell.xib in Resources */,
+				B78A5E8826771F460021BCF0 /* PosDangerCollectionViewCell.xib in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
 				8E9F87D7266D1195007E7375 /* Main.storyboard in Resources */,
@@ -352,18 +450,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DFE9DB267169520025433C /* mountains.swift in Sources */,
-				B7DFE9F32671788A0025433C /* tracks.swift in Sources */,
+				B78A5F5E2678D0DF0021BCF0 /* Initial.swift in Sources */,
+				B78A5E8226771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.swift in Sources */,
+				B78A5E6C2677155D0021BCF0 /* PosImages.swift in Sources */,
 				B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */,
-				B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */,
+				B78A5E8E2677207F0021BCF0 /* PosDangers.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
 				B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */,
 				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
-				B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */,
+				B78A5F582677B2300021BCF0 /* WisataDangers.swift in Sources */,
+				B78A5E8726771F460021BCF0 /* PosDangerCollectionViewCell.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
+				B78A5F472677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.swift in Sources */,
+				B78A5F522677B1CA0021BCF0 /* WisataImages.swift in Sources */,
 				B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */,
+				B78A5E8B2677206F0021BCF0 /* PosFacilities.swift in Sources */,
+				B78A5F4C2677AC360021BCF0 /* WisataDangerCollectionViewCell.swift in Sources */,
+				B78A5E68267714C60021BCF0 /* PosImageCollectionViewCell.swift in Sources */,
+				B78A5F552677B2240021BCF0 /* WisataFacilities.swift in Sources */,
+				B78A5E63267387980021BCF0 /* MapsViewController.swift in Sources */,
+				B78A5F412677AB960021BCF0 /* WisataImageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

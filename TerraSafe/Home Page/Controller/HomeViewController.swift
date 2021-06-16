@@ -6,9 +6,17 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: UIViewController {
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var homeArray = [Mountain]()
     @IBOutlet weak var mountainCollectionView: UICollectionView!
+    var selectedMountain: String?
+    var mountainDescription: String?
+    var mountainLocation: String?
+    var mountainHeight: String?
+    
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -25,6 +33,8 @@ class HomeViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        Initial().insertWholeData()
+        loadMountain()
         let nib = UINib(nibName: "\(HomeCollectionViewCell.self)", bundle: nil)
         mountainCollectionView.register(nib, forCellWithReuseIdentifier: "homeCell")
     }
@@ -32,14 +42,19 @@ class HomeViewController: UIViewController {
     
     
     
-    let mountains = [
-        mountain(mountainImage: #imageLiteral(resourceName: "Logo Onboarding"), mountainName: "Gn. Papandayan", mountainTrackCount: "3 Tracks", mountainElevation: "2655"),
-        mountain(mountainImage: #imageLiteral(resourceName: "Logo Onboarding"), mountainName: "Gn. Papan", mountainTrackCount: "3 Tracks", mountainElevation: "2655"),
-        mountain(mountainImage: #imageLiteral(resourceName: "Logo Onboarding"), mountainName: "Gn. dayan", mountainTrackCount: "3 Tracks", mountainElevation: "2655"),
-        mountain(mountainImage: #imageLiteral(resourceName: "Logo Onboarding"), mountainName: "Gn. dayannya", mountainTrackCount: "3 Tracks", mountainElevation: "2655"),
-        mountain(mountainImage: #imageLiteral(resourceName: "Logo Onboarding"), mountainName: "Gn. Papa", mountainTrackCount: "3 Tracks", mountainElevation: "2655")
-    ]
-   
+  
+    
+    
+    
+    func loadMountain(){
+        let request : NSFetchRequest<Mountain> = Mountain.fetchRequest()
+        do {
+            homeArray = try context.fetch(request)
+        } catch {
+            print("Error fetching data from context \(error)")
+        }
+        mountainCollectionView.reloadData()
+    }
     
     
     
@@ -57,23 +72,38 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return mountains.count
+        return homeArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCell", for: indexPath) as! HomeCollectionViewCell
-        cell.mountImage.image = mountains[indexPath.row].mountainImage
-        cell.mountTitle.text = mountains[indexPath.row].mountainName
-        cell.mountTrackCount.text = mountains[indexPath.row].mountainTrackCount
-        cell.mountElevation.text = mountains[indexPath.row].mountainElevation
+        cell.mountImage.image = UIImage(named: "\(homeArray[indexPath.row].mountainImage!)")
+        cell.mountTitle.text = homeArray[indexPath.row].mountainName
+        cell.mountTrackCount.text = homeArray[indexPath.row].mountainTrackCount
+        cell.mountElevation.text = homeArray[indexPath.row].mountainElevation
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(mountains[indexPath.row].mountainName)
+        selectedMountain = homeArray[indexPath.row].mountainName
+        mountainDescription = homeArray[indexPath.row].mountainDesc
+        mountainLocation = homeArray[indexPath.row].mountainLocation
+        mountainHeight = homeArray[indexPath.row].mountainElevation
+        performSegue(withIdentifier: "goToDetail", sender: self)
+        
+        // another way passing data
+//        let cell = storyboard?.instantiateViewController(identifier: "TracksViewController") as? TracksViewController
+//        cell?.selectedMountain = Mountains[indexPath.row].mountainName
+//        self.navigationController?.pushViewController(cell!, animated: true)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        <#code#>
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destinationVC = segue.destination as! TracksViewController
+        destinationVC.mountain?.mountainName = selectedMountain
+        destinationVC.mountain?.mountainDesc = mountainDescription
+        destinationVC.mountain?.mountainLocation = mountainLocation
+        destinationVC.mountain?.mountainElevation = mountainHeight
+        
+    }
     
 }
