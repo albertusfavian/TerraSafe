@@ -57,7 +57,7 @@ class TipsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToDetailTips"{
             let indexPath = tableView.indexPathForSelectedRow!
-            let tipsChoosen = segue.destination as? DetailViewController
+            let tipsChoosen = segue.destination as? DetailTipsViewController
             
             tipsChoosen?.objTips = Tips[indexPath.row].category
             tipsChoosen?.headTitle = Tips[indexPath.row].title
