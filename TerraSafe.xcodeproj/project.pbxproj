@@ -12,7 +12,7 @@
 		29523B462677777C00E194C8 /* Mountain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29523B452677777C00E194C8 /* Mountain.swift */; };
 		297C07B3266FDCFB00885885 /* g1t1.json in Resources */ = {isa = PBXBuildFile; fileRef = 297C07B2266FDCFB00885885 /* g1t1.json */; };
 		297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */; };
-		297C07B72670CB0400885885 /* DrawerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B62670CB0400885885 /* DrawerVC.swift */; };
+		29B548A42678C31A000D8821 /* Checkpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B548A32678C31A000D8821 /* Checkpoint.swift */; };
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
 		8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87CF266D1195007E7375 /* AppDelegate.swift */; };
 		8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D1266D1195007E7375 /* SceneDelegate.swift */; };
@@ -41,7 +41,7 @@
 		29523B452677777C00E194C8 /* Mountain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mountain.swift; sourceTree = "<group>"; };
 		297C07B2266FDCFB00885885 /* g1t1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = g1t1.json; sourceTree = "<group>"; };
 		297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackEmergencyInfoVC.swift; path = TerraSafe/TrackEmergencyInfoVC.swift; sourceTree = SOURCE_ROOT; };
-		297C07B62670CB0400885885 /* DrawerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawerVC.swift; path = TerraSafe/DrawerVC.swift; sourceTree = SOURCE_ROOT; };
+		29B548A32678C31A000D8821 /* Checkpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Checkpoint.swift; path = TerraSafe/Checkpoint.swift; sourceTree = SOURCE_ROOT; };
 		6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.release.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.release.xcconfig"; sourceTree = "<group>"; };
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
 		8E9F87CC266D1195007E7375 /* TerraSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -245,7 +245,6 @@
 			isa = PBXGroup;
 			children = (
 				297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */,
-				297C07B62670CB0400885885 /* DrawerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +252,7 @@
 		8E9F87F4266D12BC007E7375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				29B548A32678C31A000D8821 /* Checkpoint.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -440,9 +440,9 @@
 				B7DFE9DB267169520025433C /* mountains.swift in Sources */,
 				B7DFE9F32671788A0025433C /* tracks.swift in Sources */,
 				B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */,
+				29B548A42678C31A000D8821 /* Checkpoint.swift in Sources */,
 				B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
-				297C07B72670CB0400885885 /* DrawerVC.swift in Sources */,
 				B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */,
 				29523B462677777C00E194C8 /* Mountain.swift in Sources */,
 				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,

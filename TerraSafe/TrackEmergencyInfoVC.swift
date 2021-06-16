@@ -8,11 +8,19 @@
 import UIKit
 import MapboxMaps
 import Turf
-import DrawerView
 
 class TrackEmergencyInfoVC: UIViewController {
     internal var mapView: MapView!
-
+    internal var pointAnnotationManager: PointAnnotationManager?
+    @IBOutlet weak var dateView: UIView!
+    @IBOutlet weak var distanceView: UIView!
+    @IBOutlet weak var durationView: UIView!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,7 +32,21 @@ class TrackEmergencyInfoVC: UIViewController {
             self.setUpGeoJSON()
         }
         
-        initDrawerView()
+        initView()
+        initLabel()
+    }
+    
+    func initView() {
+        self.view.bringSubviewToFront(dateView)
+        self.view.bringSubviewToFront(distanceView)
+        self.view.bringSubviewToFront(durationView)
+    }
+    
+    func initLabel() {
+        dateLabel.textColor = .white
+        tempLabel.textColor = .white
+        distanceLabel.textColor = .white
+        durationLabel.textColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,31 +57,14 @@ class TrackEmergencyInfoVC: UIViewController {
         showTabBar()
     }
     
-    func initDrawerView() {
-        let drawerView = DrawerView()
-        drawerView.attachTo(view: self.view)
-        drawerView.backgroundColor = .white
-        drawerView.backgroundEffect = .none
-        drawerView.snapPositions = [.collapsed, .partiallyOpen, .open, .closed]
-        drawerView.insetAdjustmentBehavior = .automatic
-        drawerView.clipsToBounds = true
-        drawerView.alpha = 1
-        
-        let drawerVc: DrawerVC = self.storyboard!.instantiateViewController(identifier: "DrawerVC") as! DrawerVC
-        drawerVc.view.frame = drawerView.frame
-        drawerVc.view.backgroundColor = .none
-        
-        drawerView.addSubview(drawerVc.view)
-    }
-    
     func initAndCenterMap() {
         let accessToken = "sk.eyJ1Ijoicm9ueWZoZWJyaWFuIiwiYSI6ImNrcGZpb3lrMDIxbHIycGxsdnV3aWgyMmMifQ.rOTrlXaNZnmayRKptNjlcA"
         ResourceOptionsManager.default.resourceOptions.accessToken = accessToken
         let centerCoordinate = CLLocationCoordinate2D(latitude: -7.3193251, longitude: 107.726672)
         
         let camera = CameraOptions(center: centerCoordinate,
-                                   zoom: 13.1,
-                                   bearing: 80,
+                                   zoom: 14,
+                                   bearing: 217,
                                    pitch: 80)
         
         let options = MapInitOptions(
@@ -110,46 +115,50 @@ class TrackEmergencyInfoVC: UIViewController {
         var geoJSONSource = GeoJSONSource()
         geoJSONSource.data = .featureCollection(featureCollection)
         
-        var circleLayer = CircleLayer(id: "circle-layer")
-        circleLayer.filter = Exp(.eq) {
-            "$type"
-            "Point"
-        }
-        
-        for f in featureCollection.features {
-            if (f.geometry.type.rawValue == "Point") {
-                guard let property = f.properties else { return }
-                if let value = f.geometry.value {
-                    print(value)
-                    
-//                    let point = Point.where(latitude: value.latitude, longitude: value.longitude)
-                }
-                
-//                print(property)
-                
-//                self.mapView.annotations.makePointAnnotationManager()
-//                var p = PointAnnotation(point: .init(.init(latitude: <#T##CLLocationDegrees#>, longitude: <#T##CLLocationDegrees#>)))
-            }
-        }
-        
-        circleLayer.source = geoJSONDataIdentifier
-        circleLayer.circleColor = .constant(ColorRepresentable(color: UIColor.yellow))
-        circleLayer.circleOpacity = .constant(0.6)
-        circleLayer.circleRadius = .constant(8.0)
-        
         var lineLayer = LineLayer(id: "line-layer")
         lineLayer.filter = Exp(.eq) {
             "$type"
             "LineString"
         }
         lineLayer.source = geoJSONDataIdentifier
-        lineLayer.lineColor = .constant(ColorRepresentable(color: UIColor.red))
-        lineLayer.lineWidth = .constant(2)
+        lineLayer.lineColor = .constant(ColorRepresentable(color: UIColor.yellow))
+        lineLayer.lineWidth = .constant(4)
         
         // Add the source and style layers to the map style.
         try! mapView.mapboxMap.style.addSource(geoJSONSource, id: geoJSONDataIdentifier)
         try! mapView.mapboxMap.style.addLayer(lineLayer)
-        try! mapView.mapboxMap.style.addLayer(circleLayer)
+        
+        let pointAnnotationManager = mapView.annotations.makePointAnnotationManager()
+        var points: [PointAnnotation] = []
+        
+        for f in featureCollection.features {
+            if (f.geometry.type.rawValue == "Point") {
+                guard let property = f.properties else { return }
+                guard let value = f.geometry.value as? Point else { return }
+                
+                var checkPoint = PointAnnotation(point: .init(.init(latitude: value.coordinates.latitude, longitude: value.coordinates.longitude)))
+                
+                let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+                
+                if (property["kind"] as! String == "park") {
+                    imageView.image = UIImage(named: "ic_park")
+                    checkPoint.image = .custom(image: imageView.image!, name: (property["title"] as? String)!)
+                } else if (property["kind"] as! String == "summit") {
+                    imageView.image = UIImage(named: "ic_summit")
+                    checkPoint.image = .custom(image: imageView.image!, name: (property["title"] as? String)!)
+                } else if (property["kind"] as! String == "checkpoint") {
+                    imageView.image = UIImage(named: "ic_checkpoint")
+                    checkPoint.image = .custom(image: imageView.image!, name: (property["posName"] as? String)!)
+                }
+                
+                points.append(checkPoint)
+            }
+        }
+        
+        pointAnnotationManager.syncAnnotations(points)
+        self.pointAnnotationManager = pointAnnotationManager
+        
+        self.pointAnnotationManager?.delegate = self
     }
     
     func addTerrain() {
@@ -182,4 +191,17 @@ class TrackEmergencyInfoVC: UIViewController {
     }
     */
 
+}
+
+extension TrackEmergencyInfoVC: AnnotationInteractionDelegate {
+    func annotationManager(_ manager: AnnotationManager, didDetectTappedAnnotations annotations: [Annotation]) {
+        let annotation = annotations[0] as? PointAnnotation
+        guard let value = annotations[0].feature.geometry.value as? Point else { return }
+        
+        let alert = UIAlertController(title: annotation?.feature.properties!["icon-image"] as! String, message: "Berada di lokasi latitude \(value.coordinates.latitude) dan longitude \(value.coordinates.longitude)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
 }
