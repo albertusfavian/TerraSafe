@@ -14,6 +14,9 @@
 		297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */; };
 		297C07B72670CB0400885885 /* DrawerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297C07B62670CB0400885885 /* DrawerVC.swift */; };
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
+		8E909AEA266E544E007D63E8 /* SavedPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E909AE9266E544E007D63E8 /* SavedPage.storyboard */; };
+		8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */; };
+		8E909AEE266E5CD1007D63E8 /* SavedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E909AED266E5CD1007D63E8 /* SavedVC.swift */; };
 		8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87CF266D1195007E7375 /* AppDelegate.swift */; };
 		8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D1266D1195007E7375 /* SceneDelegate.swift */; };
 		8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D3266D1195007E7375 /* ViewController.swift */; };
@@ -44,6 +47,9 @@
 		297C07B62670CB0400885885 /* DrawerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawerVC.swift; path = TerraSafe/DrawerVC.swift; sourceTree = SOURCE_ROOT; };
 		6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.release.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.release.xcconfig"; sourceTree = "<group>"; };
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
+		8E909AE9266E544E007D63E8 /* SavedPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedPage.storyboard; sourceTree = "<group>"; };
+		8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
+		8E909AED266E5CD1007D63E8 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		8E9F87CC266D1195007E7375 /* TerraSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9F87CF266D1195007E7375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E9F87D1266D1195007E7375 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +198,8 @@
 		8E9F87EC266D1265007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */,
+				8E909AED266E5CD1007D63E8 /* SavedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 		8E9F87ED266D1265007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E909AE9266E544E007D63E8 /* SavedPage.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -375,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E909AEA266E544E007D63E8 /* SavedPage.storyboard in Resources */,
 				29523B44267776F700E194C8 /* mountain.json in Resources */,
 				297C07B3266FDCFB00885885 /* g1t1.json in Resources */,
 				B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */,
@@ -448,6 +458,8 @@
 				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
+				8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */,
+				8E909AEE266E5CD1007D63E8 /* SavedVC.swift in Sources */,
 				B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
 				297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */,
