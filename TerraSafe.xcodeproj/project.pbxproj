@@ -24,6 +24,12 @@
 		8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D8266D1195007E7375 /* TerraSafe.xcdatamodeld */; };
 		8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DB266D1196007E7375 /* Assets.xcassets */; };
 		8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E9F87DD266D1196007E7375 /* LaunchScreen.storyboard */; };
+		8EA6DB1926735461004B371F /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1826735461004B371F /* NetworkRequest.swift */; };
+		8EA6DB1B26735502004B371F /* ModelNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */; };
+		8EA6DB1D26739761004B371F /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */; };
+		8ECC15052670F2D30079EB1F /* DetailInformationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */; };
+		8ECC1507267105EC0079EB1F /* DetailInformationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */; };
+		8ECC1509267106C60079EB1F /* TableTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */; };
 		B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DE82672432B0021BCF0 /* CardViewController.swift */; };
 		B78A5DEB2672432B0021BCF0 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B78A5DE92672432B0021BCF0 /* CardViewController.xib */; };
 		B78A5DEE2672446A0021BCF0 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78A5DED2672446A0021BCF0 /* DetailViewController.swift */; };
@@ -59,6 +65,12 @@
 		8E9F87DB266D1196007E7375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E9F87DE266D1196007E7375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E9F87E0266D1196007E7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EA6DB1826735461004B371F /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNetworkRequest.swift; sourceTree = "<group>"; };
+		8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailInformationPage.storyboard; sourceTree = "<group>"; };
+		8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInformationPageVC.swift; sourceTree = "<group>"; };
+		8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTrackTableViewCell.swift; sourceTree = "<group>"; };
 		B78A5DE82672432B0021BCF0 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		B78A5DE92672432B0021BCF0 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
 		B78A5DED2672446A0021BCF0 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -222,6 +234,10 @@
 		8E9F87EF266D1268007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC1506267105EC0079EB1F /* DetailInformationPageVC.swift */,
+				8ECC1508267106C60079EB1F /* TableTrackTableViewCell.swift */,
+				8EA6DB1826735461004B371F /* NetworkRequest.swift */,
+				8EA6DB1C26739761004B371F /* WeatherCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -229,6 +245,7 @@
 		8E9F87F0266D1268007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8ECC15042670F2D30079EB1F /* DetailInformationPage.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +253,7 @@
 		8E9F87F1266D1268007E7375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EA6DB1A26735502004B371F /* ModelNetworkRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,6 +412,7 @@
 				B7DFE9C9267163230025433C /* Home.storyboard in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
+				8ECC15052670F2D30079EB1F /* DetailInformationPage.storyboard in Resources */,
 				8E9F87D7266D1195007E7375 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,6 +466,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA6DB1D26739761004B371F /* WeatherCollectionViewCell.swift in Sources */,
+				8EA6DB1B26735502004B371F /* ModelNetworkRequest.swift in Sources */,
+				8EA6DB1926735461004B371F /* NetworkRequest.swift in Sources */,
 				B7DFE9DB267169520025433C /* mountains.swift in Sources */,
 				B7DFE9F32671788A0025433C /* tracks.swift in Sources */,
 				B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */,
@@ -457,11 +479,13 @@
 				29523B462677777C00E194C8 /* Mountain.swift in Sources */,
 				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
+				8ECC1509267106C60079EB1F /* TableTrackTableViewCell.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
 				8E909AEC266E5CA1007D63E8 /* SavedTableViewCell.swift in Sources */,
 				8E909AEE266E5CD1007D63E8 /* SavedVC.swift in Sources */,
 				B78A5DEA2672432B0021BCF0 /* CardViewController.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
+				8ECC1507267105EC0079EB1F /* DetailInformationPageVC.swift in Sources */,
 				297C07B5266FE7D700885885 /* TrackEmergencyInfoVC.swift in Sources */,
 				B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */,
 			);

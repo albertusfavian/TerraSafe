@@ -82,15 +82,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="pvQ-Bp-tdx" kind="relationship" relationship="rootViewController" id="lwg-26-Srs"/>
+                        <segue destination="9lR-RN-5EX" kind="relationship" relationship="rootViewController" id="BGE-6Y-Fo9"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3b-Hf-NSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2045" y="-629"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="dK5-Ph-B1y">
+        <!--DetailInformationPage-->
+        <scene sceneID="obl-a8-qnD">
             <objects>
                 <viewController id="pvQ-Bp-tdx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gp7-Ak-jGD">
