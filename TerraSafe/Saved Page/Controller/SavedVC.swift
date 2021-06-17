@@ -13,11 +13,10 @@ class SavedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//
+        
         tableSaved.delegate = self
         tableSaved.dataSource = self
-        tableSaved.separatorStyle = .none
-        
+        tableSaved.separatorStyle .none
 //         if tableview empty set ishidden true, bring this code to numberOfRowInSection if coredata are available
         tableSaved.isHidden = false
         // Do any additional setup after loading the view.
@@ -30,7 +29,7 @@ class SavedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let savedCell = tableView.dequeueReusableCell(withIdentifier: "savedCell", for: indexPath) as! SavedTableViewCell
-        savedCell.mountainName.text = "Gn. Papandayan"
+        savedCell.mountainName.text =
         savedCell.trackVia.text =  "Track Via Sirah Kencong"
         savedCell.hourAndDistance.text = "3 Hour, 8,55km"
         savedCell.backgroundView = UIImageView(image: UIImage(named: "dummy_gambar-1"))

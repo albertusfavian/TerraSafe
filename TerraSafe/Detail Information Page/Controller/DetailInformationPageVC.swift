@@ -18,6 +18,12 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weatherCollectionView: UICollectionView!
     
+    
+    var mountainNameVar:String = ""
+    var mountainDescVar:String = ""
+    var mountainLocationVar:String = ""
+    var mountainHeightVar:String = ""
+    
     var listTemp: [Float]?
     var listCondition: [String]?
     var listDate: [String]?
@@ -38,17 +44,31 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
             self.listDate = dateArray
             print(self.listTemp, self.listCondition, self.listDate)
         }
-        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController!.navigationBar.shadowImage = UIImage()
-        self.navigationController!.navigationBar.isTranslucent = true
-        descriptionLabel.text = "Gunung Papandayan adalah gunung api strato yang terletak di Kabupaten Garut, Jawa Barat tepatnya di Kecamatan Cisurupan."
-        locationLabel.text = "Kabupaten Garut, Jawa Barat"
-        heightLabel.text = "2665 meter"
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.view.backgroundColor = .red
+        mountainNameLabel.text = mountainNameVar
+        descriptionLabel.text = mountainDescVar
+        locationLabel.text = mountainLocationVar
+        heightLabel.text = mountainHeightVar
         
         
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        // Restore the navigation bar to default
+        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+        navigationController?.navigationBar.shadowImage = nil
+    }
 
     
     
@@ -66,6 +86,11 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
         cell?.trackNameLabel.text = "Sirah Kencong"
         cell?.hourLabel.text = "3hour"
         return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        return
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -90,6 +115,12 @@ class DetailInformationPageVC: UIViewController, UITableViewDelegate, UITableVie
         {
            return CGSize(width: 100, height: 100)
         }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let controllerMap = segue.destination as? TrackEmergencyInfoVC
+        
+    }
     /*
     // MARK: - Navigation
 

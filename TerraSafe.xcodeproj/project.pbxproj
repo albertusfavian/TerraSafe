@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		19A26EEF51F23183FF392199 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		29523B44267776F700E194C8 /* mountain.json in Resources */ = {isa = PBXBuildFile; fileRef = 29523B43267776F700E194C8 /* mountain.json */; };
+		297C07B3266FDCFB00885885 /* g1t1.json in Resources */ = {isa = PBXBuildFile; fileRef = 297C07B2266FDCFB00885885 /* g1t1.json */; };
+		8E3F82092679E736005DBA59 /* sampleNewTabPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E3F82072679E736005DBA59 /* sampleNewTabPage.storyboard */; };
 		8E55B1B3267B650F001C3CA6 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E55B1B2267B650F001C3CA6 /* Tips.storyboard */; };
 		8E55B1B7267B651A001C3CA6 /* TipsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1B4267B651A001C3CA6 /* TipsTVC.swift */; };
 		8E55B1B8267B651A001C3CA6 /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1B5267B651A001C3CA6 /* TipsVC.swift */; };
@@ -19,6 +22,8 @@
 		8E55B1C3267B6548001C3CA6 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1BF267B6548001C3CA6 /* WeatherCollectionViewCell.swift */; };
 		8E55B1C5267B6554001C3CA6 /* DetailInformationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E55B1C4267B6554001C3CA6 /* DetailInformationPage.storyboard */; };
 		8E55B1C7267B65E2001C3CA6 /* ModelNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1C6267B65E2001C3CA6 /* ModelNetworkRequest.swift */; };
+		8E55B1CB267B8EA5001C3CA6 /* Saved.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E55B1CA267B8EA5001C3CA6 /* Saved.storyboard */; };
+		8E55B1CF267B98FA001C3CA6 /* SavedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1CE267B98FA001C3CA6 /* SavedTVC.swift */; };
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
 		8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87CF266D1195007E7375 /* AppDelegate.swift */; };
 		8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D1266D1195007E7375 /* SceneDelegate.swift */; };
@@ -63,6 +68,7 @@
 		297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackEmergencyInfoVC.swift; path = TerraSafe/TrackEmergencyInfoVC.swift; sourceTree = SOURCE_ROOT; };
 		29B548A32678C31A000D8821 /* Checkpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Checkpoint.swift; path = TerraSafe/Checkpoint.swift; sourceTree = SOURCE_ROOT; };
 		6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.release.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.release.xcconfig"; sourceTree = "<group>"; };
+		8E3F82082679E736005DBA59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TerraSafe/Base.lproj/sampleNewTabPage.storyboard; sourceTree = "<group>"; };
 		8E55B1B2267B650F001C3CA6 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
 		8E55B1B4267B651A001C3CA6 /* TipsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTVC.swift; sourceTree = "<group>"; };
 		8E55B1B5267B651A001C3CA6 /* TipsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
@@ -74,9 +80,10 @@
 		8E55B1BF267B6548001C3CA6 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8E55B1C4267B6554001C3CA6 /* DetailInformationPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailInformationPage.storyboard; sourceTree = "<group>"; };
 		8E55B1C6267B65E2001C3CA6 /* ModelNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelNetworkRequest.swift; sourceTree = "<group>"; };
+		8E55B1C8267B6D4C001C3CA6 /* PosFacilitiesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PosFacilitiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		8E55B1CA267B8EA5001C3CA6 /* Saved.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Saved.storyboard; sourceTree = "<group>"; };
+		8E55B1CE267B98FA001C3CA6 /* SavedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTVC.swift; sourceTree = "<group>"; };
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
-		8E909AE9266E544E007D63E8 /* SavedPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedPage.storyboard; sourceTree = "<group>"; };
-		8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
 		8E909AED266E5CD1007D63E8 /* SavedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedVC.swift; sourceTree = "<group>"; };
 		8E9F87CC266D1195007E7375 /* TerraSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TerraSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E9F87CF266D1195007E7375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +154,7 @@
 		8E9F87C3266D1195007E7375 = {
 			isa = PBXGroup;
 			children = (
+				8E3F82072679E736005DBA59 /* sampleNewTabPage.storyboard */,
 				8E9F87CE266D1195007E7375 /* TerraSafe */,
 				8E9F87CD266D1195007E7375 /* Products */,
 				6EB57BF2C2C9D6E82B3C7673 /* Pods */,
@@ -243,8 +251,8 @@
 		8E9F87EC266D1265007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */,
 				8E909AED266E5CD1007D63E8 /* SavedVC.swift */,
+				8E55B1CE267B98FA001C3CA6 /* SavedTVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,7 +260,7 @@
 		8E9F87ED266D1265007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8E909AE9266E544E007D63E8 /* SavedPage.storyboard */,
+				8E55B1CA267B8EA5001C3CA6 /* Saved.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,6 +416,7 @@
 		B7DFE9C6267162A00025433C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E55B1C8267B6D4C001C3CA6 /* PosFacilitiesCollectionViewCell.xib */,
 				B7DFE9C8267163230025433C /* Home.storyboard */,
 				B7DFE9CF267164A60025433C /* HomeCollectionViewCell.xib */,
 				B7DFE9ED2671762F0025433C /* TrackTableViewCell.xib */,
@@ -498,6 +507,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29523B44267776F700E194C8 /* mountain.json in Resources */,
+				297C07B3266FDCFB00885885 /* g1t1.json in Resources */,
+				8E3F82092679E736005DBA59 /* sampleNewTabPage.storyboard in Resources */,
 				8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */,
 				B7DFE9EF2671762F0025433C /* TrackTableViewCell.xib in Resources */,
 				B7DFE9D1267164A60025433C /* HomeCollectionViewCell.xib in Resources */,
@@ -511,6 +523,7 @@
 				B78A5E8826771F460021BCF0 /* PosDangerCollectionViewCell.xib in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
+				8E55B1CB267B8EA5001C3CA6 /* Saved.storyboard in Resources */,
 				8E55B1C5267B6554001C3CA6 /* DetailInformationPage.storyboard in Resources */,
 				8E9F87D7266D1195007E7375 /* Main.storyboard in Resources */,
 			);
@@ -574,6 +587,7 @@
 				B78A5E8E2677207F0021BCF0 /* PosDangers.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
 				B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */,
+				8E55B1CF267B98FA001C3CA6 /* SavedTVC.swift in Sources */,
 				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
@@ -602,6 +616,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8E3F82072679E736005DBA59 /* sampleNewTabPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E3F82082679E736005DBA59 /* Base */,
+			);
+			name = sampleNewTabPage.storyboard;
+			sourceTree = "<group>";
+		};
 		8E9F87D5266D1195007E7375 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

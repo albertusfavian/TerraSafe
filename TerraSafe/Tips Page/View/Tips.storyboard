@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zey-qC-QXw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MAW-XD-BgP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--TipsVC-->
+        <!--Navigation Tips-->
         <scene sceneID="kKl-fw-Cee">
             <objects>
                 <viewController id="zey-qC-QXw" customClass="TipsVC" customModule="TerraSafe" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,24 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" id="9u6-FA-mED">
-                                <rect key="frame" x="0.0" y="821" width="414" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Home" image="triangle.fill" catalog="system" id="neG-Ao-7do"/>
-                                    <tabBarItem title="Saved" image="square.and.arrow.down.fill" catalog="system" id="FRc-fa-k9b"/>
-                                    <tabBarItem title="Tips" image="book.fill" catalog="system" id="SSY-ag-hBt"/>
-                                </items>
-                            </tabBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navigation Tips" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bi8-b1-Gx9">
-                                <rect key="frame" x="20" y="102" width="374" height="43"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" red="0.16078431369999999" green="0.26274509800000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m6W-0R-Yi3">
-                                <rect key="frame" x="0.0" y="176" width="414" height="645"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tip_cell" rowHeight="104" id="RpQ-bx-x0H" customClass="TipsTVC" customModule="TerraSafe" customModuleProvider="target">
@@ -94,16 +78,13 @@
                         <viewLayoutGuide key="safeArea" id="Izq-u4-100"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bi8-b1-Gx9" firstAttribute="leading" secondItem="OTs-xD-Icc" secondAttribute="leadingMargin" id="K6g-fG-g3I"/>
+                            <constraint firstItem="m6W-0R-Yi3" firstAttribute="top" secondItem="Izq-u4-100" secondAttribute="top" id="7lW-wY-W4f"/>
                             <constraint firstItem="m6W-0R-Yi3" firstAttribute="trailing" secondItem="Izq-u4-100" secondAttribute="trailing" id="Naj-4w-3X4"/>
-                            <constraint firstItem="Bi8-b1-Gx9" firstAttribute="top" secondItem="Izq-u4-100" secondAttribute="top" constant="58" id="UZo-tn-Sdu"/>
-                            <constraint firstItem="Bi8-b1-Gx9" firstAttribute="leading" secondItem="Izq-u4-100" secondAttribute="leading" constant="20" id="bBQ-Ad-IlY"/>
-                            <constraint firstItem="Izq-u4-100" firstAttribute="trailing" secondItem="Bi8-b1-Gx9" secondAttribute="trailing" constant="20" id="bTS-7I-Cez"/>
+                            <constraint firstItem="Izq-u4-100" firstAttribute="bottom" secondItem="m6W-0R-Yi3" secondAttribute="bottom" id="ZnJ-zN-VAA"/>
                             <constraint firstItem="m6W-0R-Yi3" firstAttribute="leading" secondItem="Izq-u4-100" secondAttribute="leading" id="dwO-Lv-ZJm"/>
-                            <constraint firstItem="m6W-0R-Yi3" firstAttribute="top" secondItem="Bi8-b1-Gx9" secondAttribute="bottom" constant="31" id="eaV-v5-Jla"/>
-                            <constraint firstItem="9u6-FA-mED" firstAttribute="top" secondItem="m6W-0R-Yi3" secondAttribute="bottom" id="zjJ-rY-FZ0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Navigation Tips" id="qpF-LR-HSz"/>
                     <connections>
                         <outlet property="tableView" destination="m6W-0R-Yi3" id="wy2-DX-jmt"/>
                         <segue destination="w7Q-uU-5rg" kind="showDetail" identifier="goToDetailTips" id="jbb-ye-Ymm"/>
@@ -111,12 +92,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nhJ-3O-jBj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229" y="148"/>
+            <point key="canvasLocation" x="1139.1304347826087" y="147.99107142857142"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Detail Tips View Controller-->
         <scene sceneID="HeQ-oQ-0Fa">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="w7Q-uU-5rg" customClass="DetailViewController" customModule="TerraSafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="w7Q-uU-5rg" customClass="DetailTipsViewController" customModule="TerraSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y61-6J-9iU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,20 +140,35 @@
                     </view>
                     <navigationItem key="navigationItem" id="QtI-Jb-ShD"/>
                     <connections>
-                        <outlet property="contentLabel" destination="9LH-Td-P6i" id="McO-nJ-oBE"/>
-                        <outlet property="imageViewDetail" destination="YK5-iC-hQ9" id="ahe-TG-NWU"/>
-                        <outlet property="titleLabel" destination="cOC-aD-d3c" id="6hd-bn-UR4"/>
+                        <outlet property="contentLabel" destination="9LH-Td-P6i" id="Hpd-lv-MgU"/>
+                        <outlet property="imageViewDetail" destination="YK5-iC-hQ9" id="uEh-Hl-Gsh"/>
+                        <outlet property="titleLabel" destination="cOC-aD-d3c" id="asR-4P-bc4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r0X-W0-ADQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.82608695652186" y="147.99107142857142"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="147.99107142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="26N-r9-VPX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MAW-XD-BgP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fqt-yd-o0z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zey-qC-QXw" kind="relationship" relationship="rootViewController" id="rbr-Ee-4aK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVh-YF-V1j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="148"/>
         </scene>
     </scenes>
     <resources>
-        <image name="book.fill" catalog="system" width="128" height="102"/>
-        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
-        <image name="triangle.fill" catalog="system" width="128" height="112"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

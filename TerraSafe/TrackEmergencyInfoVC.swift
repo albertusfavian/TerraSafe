@@ -21,9 +21,11 @@ class TrackEmergencyInfoVC: UIViewController {
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     
+    var titleTrack: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = titleTrack
         initAndCenterMap()
         
         // Set GeoJSON

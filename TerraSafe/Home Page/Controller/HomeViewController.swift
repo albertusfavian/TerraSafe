@@ -98,11 +98,18 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let destinationVC = segue.destination as! TracksViewController
-        destinationVC.mountain?.mountainName = selectedMountain
-        destinationVC.mountain?.mountainDesc = mountainDescription
-        destinationVC.mountain?.mountainLocation = mountainLocation
-        destinationVC.mountain?.mountainElevation = mountainHeight
+        let destinationVC = segue.destination as? DetailInformationPageVC
+        print(selectedMountain)
+        destinationVC?.mountainNameVar = selectedMountain!
+        destinationVC?.mountainDescVar = mountainHeight!
+        destinationVC?.mountainLocationVar = mountainLocation!
+        destinationVC?.mountainHeightVar = mountainDescription!
+//            
+//            destinationVC.mountain?.mountainName = selectedMountain
+//            destinationVC.mountain?.mountainDesc = mountainDescription
+//            destinationVC.mountain?.mountainLocation = mountainLocation
+//            destinationVC.mountain?.mountainElevation = mountainHeight
+        
         
     }
     
