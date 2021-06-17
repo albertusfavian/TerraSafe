@@ -94,9 +94,6 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="pjP-ID-y3E" kind="relationship" relationship="rootViewController" id="9Ea-K0-Ptn"/>
-                    </connections>
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="2643" y="183"/>
@@ -129,20 +126,11 @@
             </objects>
             <point key="canvasLocation" x="3132" y="791"/>
         </scene>
-        <!--SavedPage-->
-        <scene sceneID="423-Hm-vv4">
-            <objects>
-                <viewControllerPlaceholder storyboardName="SavedPage" id="pjP-ID-y3E" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="xAW-wW-jCW"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f0M-Fz-gT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3299" y="68"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Logo Onboarding" width="1000" height="1000"/>
         <image name="book.fill" catalog="system" width="128" height="102"/>
+        <image name="triangle.fill" catalog="system" width="128" height="112"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
