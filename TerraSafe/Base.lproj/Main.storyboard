@@ -125,19 +125,29 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="DVo-Pr-auL" kind="relationship" relationship="rootViewController" id="ffY-v2-Dy4"/>
+                        <segue destination="fha-9v-tcJ" kind="relationship" relationship="rootViewController" id="KNv-R9-hpy"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJZ-6C-h7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2045" y="802"/>
         </scene>
+        <!--Tips-->
+        <scene sceneID="bRc-TJ-K79">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tips" id="fha-9v-tcJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SAa-SJ-euX"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e2w-Ij-lIJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2882" y="438"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="Zd8-fn-ISZ">
             <objects>
                 <viewController id="DVo-Pr-auL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Gt-jP-6vo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="s6D-sr-b65"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

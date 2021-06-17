@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		19A26EEF51F23183FF392199 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		8E55B1B3267B650F001C3CA6 /* Tips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E55B1B2267B650F001C3CA6 /* Tips.storyboard */; };
+		8E55B1B7267B651A001C3CA6 /* TipsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1B4267B651A001C3CA6 /* TipsTVC.swift */; };
+		8E55B1B8267B651A001C3CA6 /* TipsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1B5267B651A001C3CA6 /* TipsVC.swift */; };
+		8E55B1B9267B651A001C3CA6 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1B6267B651A001C3CA6 /* DetailVC.swift */; };
+		8E55B1BB267B6525001C3CA6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1BA267B6525001C3CA6 /* Model.swift */; };
+		8E55B1C0267B6548001C3CA6 /* DetailInformationPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1BC267B6548001C3CA6 /* DetailInformationPageVC.swift */; };
+		8E55B1C1267B6548001C3CA6 /* TableTrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1BD267B6548001C3CA6 /* TableTrackTableViewCell.swift */; };
+		8E55B1C2267B6548001C3CA6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1BE267B6548001C3CA6 /* NetworkRequest.swift */; };
+		8E55B1C3267B6548001C3CA6 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1BF267B6548001C3CA6 /* WeatherCollectionViewCell.swift */; };
+		8E55B1C5267B6554001C3CA6 /* DetailInformationPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E55B1C4267B6554001C3CA6 /* DetailInformationPage.storyboard */; };
+		8E55B1C7267B65E2001C3CA6 /* ModelNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E55B1C6267B65E2001C3CA6 /* ModelNetworkRequest.swift */; };
 		8E738FBD266D1D9100245485 /* TrackEmergencyInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */; };
 		8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87CF266D1195007E7375 /* AppDelegate.swift */; };
 		8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9F87D1266D1195007E7375 /* SceneDelegate.swift */; };
@@ -52,6 +63,17 @@
 		297C07B4266FE7D700885885 /* TrackEmergencyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackEmergencyInfoVC.swift; path = TerraSafe/TrackEmergencyInfoVC.swift; sourceTree = SOURCE_ROOT; };
 		29B548A32678C31A000D8821 /* Checkpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Checkpoint.swift; path = TerraSafe/Checkpoint.swift; sourceTree = SOURCE_ROOT; };
 		6703BE07E154C10F0D9CCEA9 /* Pods-TerraSafe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TerraSafe.release.xcconfig"; path = "Target Support Files/Pods-TerraSafe/Pods-TerraSafe.release.xcconfig"; sourceTree = "<group>"; };
+		8E55B1B2267B650F001C3CA6 /* Tips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Tips.storyboard; sourceTree = "<group>"; };
+		8E55B1B4267B651A001C3CA6 /* TipsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsTVC.swift; sourceTree = "<group>"; };
+		8E55B1B5267B651A001C3CA6 /* TipsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsVC.swift; sourceTree = "<group>"; };
+		8E55B1B6267B651A001C3CA6 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		8E55B1BA267B6525001C3CA6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8E55B1BC267B6548001C3CA6 /* DetailInformationPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInformationPageVC.swift; sourceTree = "<group>"; };
+		8E55B1BD267B6548001C3CA6 /* TableTrackTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableTrackTableViewCell.swift; sourceTree = "<group>"; };
+		8E55B1BE267B6548001C3CA6 /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		8E55B1BF267B6548001C3CA6 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		8E55B1C4267B6554001C3CA6 /* DetailInformationPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailInformationPage.storyboard; sourceTree = "<group>"; };
+		8E55B1C6267B65E2001C3CA6 /* ModelNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelNetworkRequest.swift; sourceTree = "<group>"; };
 		8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackEmergencyInfo.storyboard; sourceTree = "<group>"; };
 		8E909AE9266E544E007D63E8 /* SavedPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SavedPage.storyboard; sourceTree = "<group>"; };
 		8E909AEB266E5CA1007D63E8 /* SavedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableViewCell.swift; sourceTree = "<group>"; };
@@ -195,6 +217,7 @@
 		8E9F87E9266D124E007E7375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E55B1BA267B6525001C3CA6 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +225,7 @@
 		8E9F87EA266D1257007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E55B1B2267B650F001C3CA6 /* Tips.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +233,9 @@
 		8E9F87EB266D125B007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E55B1B6267B651A001C3CA6 /* DetailVC.swift */,
+				8E55B1B4267B651A001C3CA6 /* TipsTVC.swift */,
+				8E55B1B5267B651A001C3CA6 /* TipsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,6 +267,10 @@
 		8E9F87EF266D1268007E7375 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E55B1BC267B6548001C3CA6 /* DetailInformationPageVC.swift */,
+				8E55B1BE267B6548001C3CA6 /* NetworkRequest.swift */,
+				8E55B1BD267B6548001C3CA6 /* TableTrackTableViewCell.swift */,
+				8E55B1BF267B6548001C3CA6 /* WeatherCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -247,6 +278,7 @@
 		8E9F87F0266D1268007E7375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8E55B1C4267B6554001C3CA6 /* DetailInformationPage.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +286,7 @@
 		8E9F87F1266D1268007E7375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8E55B1C6267B65E2001C3CA6 /* ModelNetworkRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -471,12 +504,14 @@
 				B78A5F422677AB960021BCF0 /* WisataImageCollectionViewCell.xib in Resources */,
 				B78A5F482677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.xib in Resources */,
 				B78A5E8326771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.xib in Resources */,
+				8E55B1B3267B650F001C3CA6 /* Tips.storyboard in Resources */,
 				B78A5E69267714C60021BCF0 /* PosImageCollectionViewCell.xib in Resources */,
 				B7DFE9C9267163230025433C /* Home.storyboard in Resources */,
 				B78A5F4D2677AC360021BCF0 /* WisataDangerCollectionViewCell.xib in Resources */,
 				B78A5E8826771F460021BCF0 /* PosDangerCollectionViewCell.xib in Resources */,
 				8E9F87DF266D1196007E7375 /* LaunchScreen.storyboard in Resources */,
 				8E9F87DC266D1196007E7375 /* Assets.xcassets in Resources */,
+				8E55B1C5267B6554001C3CA6 /* DetailInformationPage.storyboard in Resources */,
 				8E9F87D7266D1195007E7375 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,28 +565,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E55B1B8267B651A001C3CA6 /* TipsVC.swift in Sources */,
 				B78A5F5E2678D0DF0021BCF0 /* Initial.swift in Sources */,
 				B78A5E8226771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.swift in Sources */,
 				B78A5E6C2677155D0021BCF0 /* PosImages.swift in Sources */,
 				B7DFE9CC2671637B0025433C /* HomeViewController.swift in Sources */,
+				8E55B1B9267B651A001C3CA6 /* DetailVC.swift in Sources */,
 				B78A5E8E2677207F0021BCF0 /* PosDangers.swift in Sources */,
 				8E9F87D4266D1195007E7375 /* ViewController.swift in Sources */,
 				B7DFE9E6267171600025433C /* TracksViewController.swift in Sources */,
 				B7DFE9EE2671762F0025433C /* TrackTableViewCell.swift in Sources */,
 				8E9F87D0266D1195007E7375 /* AppDelegate.swift in Sources */,
 				8E9F87D2266D1195007E7375 /* SceneDelegate.swift in Sources */,
+				8E55B1C1267B6548001C3CA6 /* TableTrackTableViewCell.swift in Sources */,
 				B78A5F582677B2300021BCF0 /* WisataDangers.swift in Sources */,
 				B78A5E8726771F460021BCF0 /* PosDangerCollectionViewCell.swift in Sources */,
+				8E55B1C3267B6548001C3CA6 /* WeatherCollectionViewCell.swift in Sources */,
 				8E9F87DA266D1195007E7375 /* TerraSafe.xcdatamodeld in Sources */,
 				B78A5F472677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.swift in Sources */,
 				B78A5F522677B1CA0021BCF0 /* WisataImages.swift in Sources */,
+				8E55B1C7267B65E2001C3CA6 /* ModelNetworkRequest.swift in Sources */,
 				B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */,
+				8E55B1C0267B6548001C3CA6 /* DetailInformationPageVC.swift in Sources */,
 				B78A5E8B2677206F0021BCF0 /* PosFacilities.swift in Sources */,
+				8E55B1BB267B6525001C3CA6 /* Model.swift in Sources */,
 				B78A5F4C2677AC360021BCF0 /* WisataDangerCollectionViewCell.swift in Sources */,
 				B78A5E68267714C60021BCF0 /* PosImageCollectionViewCell.swift in Sources */,
+				8E55B1B7267B651A001C3CA6 /* TipsTVC.swift in Sources */,
 				B78A5F552677B2240021BCF0 /* WisataFacilities.swift in Sources */,
 				B78A5E63267387980021BCF0 /* MapsViewController.swift in Sources */,
 				B78A5F412677AB960021BCF0 /* WisataImageCollectionViewCell.swift in Sources */,
+				8E55B1C2267B6548001C3CA6 /* NetworkRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
