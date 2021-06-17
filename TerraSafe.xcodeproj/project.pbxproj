@@ -181,9 +181,9 @@
 		8E9F87CE266D1195007E7375 /* TerraSafe */ = {
 			isa = PBXGroup;
 			children = (
+				8EF345AA267B41D90076E0AF /* Tips Page */,
 				B7DFE9C4267162890025433C /* Home Page */,
 				8E9F87F2266D12A3007E7375 /* Track Emergency Info Page */,
-				8E9F87E8266D1246007E7375 /* Tips Page */,
 				8E9F87E7266D123E007E7375 /* Saved Page */,
 				8E9F87E6266D11AF007E7375 /* Detail Information Page */,
 				8E9F87CF266D1195007E7375 /* AppDelegate.swift */,
@@ -218,37 +218,6 @@
 				8E9F87EE266D1265007E7375 /* Model */,
 			);
 			path = "Saved Page";
-			sourceTree = "<group>";
-		};
-		8E9F87E8266D1246007E7375 /* Tips Page */ = {
-			isa = PBXGroup;
-			children = (
-				8E9F87EB266D125B007E7375 /* Controller */,
-				8E9F87EA266D1257007E7375 /* View */,
-				8E9F87E9266D124E007E7375 /* Model */,
-			);
-			path = "Tips Page";
-			sourceTree = "<group>";
-		};
-		8E9F87E9266D124E007E7375 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		8E9F87EA266D1257007E7375 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		8E9F87EB266D125B007E7375 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		8E9F87EC266D1265007E7375 /* Controller */ = {
@@ -328,6 +297,42 @@
 				8E738FBC266D1D9100245485 /* TrackEmergencyInfo.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8EF345AA267B41D90076E0AF /* Tips Page */ = {
+			isa = PBXGroup;
+			children = (
+				8EF345AD267B41ED0076E0AF /* Model */,
+				8EF345AC267B41E90076E0AF /* View */,
+				8EF345AB267B41E40076E0AF /* Controller */,
+			);
+			path = "Tips Page";
+			sourceTree = "<group>";
+		};
+		8EF345AB267B41E40076E0AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EF345AE267B420C0076E0AF /* DetailVC.swift */,
+				8EF345B0267B42130076E0AF /* TipsTVC.swift */,
+				8EF345B2267B421A0076E0AF /* TipsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EF345AC267B41E90076E0AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8EF345B4267B42240076E0AF /* Tips.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EF345AD267B41ED0076E0AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EF345B6267B422F0076E0AF /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B78A5E7126771BB70021BCF0 /* DetailTrackPos */ = {
@@ -518,6 +523,7 @@
 				B78A5F422677AB960021BCF0 /* WisataImageCollectionViewCell.xib in Resources */,
 				B78A5F482677AC1A0021BCF0 /* WisataFacilitiesCollectionViewCell.xib in Resources */,
 				B78A5E8326771F3B0021BCF0 /* PosFacilitiesCollectionViewCell.xib in Resources */,
+				8EF345B5267B42240076E0AF /* Tips.storyboard in Resources */,
 				B78A5E69267714C60021BCF0 /* PosImageCollectionViewCell.xib in Resources */,
 				B7DFE9C9267163230025433C /* Home.storyboard in Resources */,
 				B78A5F4D2677AC360021BCF0 /* WisataDangerCollectionViewCell.xib in Resources */,
@@ -594,9 +600,13 @@
 				B78A5F522677B1CA0021BCF0 /* WisataImages.swift in Sources */,
 				B7DFE9D0267164A60025433C /* HomeCollectionViewCell.swift in Sources */,
 				B78A5E8B2677206F0021BCF0 /* PosFacilities.swift in Sources */,
+				8EF345B3267B421A0076E0AF /* TipsVC.swift in Sources */,
 				B78A5F4C2677AC360021BCF0 /* WisataDangerCollectionViewCell.swift in Sources */,
+				8EF345B7267B422F0076E0AF /* Model.swift in Sources */,
 				B78A5E68267714C60021BCF0 /* PosImageCollectionViewCell.swift in Sources */,
+				8EF345AF267B420C0076E0AF /* DetailVC.swift in Sources */,
 				B78A5F552677B2240021BCF0 /* WisataFacilities.swift in Sources */,
+				8EF345B1267B42130076E0AF /* TipsTVC.swift in Sources */,
 				B78A5E63267387980021BCF0 /* MapsViewController.swift in Sources */,
 				B78A5F412677AB960021BCF0 /* WisataImageCollectionViewCell.swift in Sources */,
 			);
